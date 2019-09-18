@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Register With Us</title>
 </head>
 <body>
 
@@ -10,36 +10,45 @@
 
 <br>
 <Form method="POST" action="https://request-inspector.glitch.me/">
-    <label for="email">Email</label>
-    <input id="email" name="email" type="text">
-    <br>
-
-    <label for="password">Password</label>
-    <input id="password" name="password" type="password">
-    <br>
-
-    <input type="submit">
-</Form>
+<label for="email">Email</label>
+<input id="email" name="email" type="text">
 <br>
-<h1>Bio</h1>
 
-<textarea> Tell us about yourself!</textarea>
+<label for="password">Password</label>
+<input id="password" name="password" type="password">
 <br>
-<h1>How Did You Hear About Us?</h1>
+
+<input type="submit">
+
+<br>
+
+<label for="bio">Tell Us About Yourself </label>
+<br>
+
+<textarea name="bio" id="bio" cols="30" rows="10"> </textarea>
+<br>
+
+    <button type="submit"> Submit your bio</button>
+
+<br>
+
+<h2>How Did You Hear About Us?</h2>
 <label for="billboard">
-    <input id="billboard" type="radio" name="quiz_question_1" value="a">Billboard<br>
+    <input id="billboard" type="checkbox" name="quiz_question_1" value="a">Billboard<br>
 </label>
 <label for="radio-ad">
-    <input id="radio-ad" type="radio" name="quiz_question_1" value="b">Radio Advertisement<br>
+    <input id="radio-ad" type="checkbox" name="quiz_question_1" value="b">Radio Advertisement<br>
 </label>
 <label for="internet-ad">
-    <input id="internet-ad" type="radio" name="quiz_question_1" value="c">Internet Advertisement<br>
+    <input id="internet-ad" type="checkbox" name="quiz_question_1" value="c">Internet Advertisement<br>
 </label>
 <label for="other">
-    <input id="other" type="radio" name="quiz_question_1" value="d">Other<br>
+    <input id="other" type="checkbox" name="quiz_question_1" value="d">Other<br>
 </label>
 <br>
-<h1>What Web Browser Are You Using?</h1>
+<button type="submit">Submit your answer</button>
+<br>
+<h2>What Web Browser Are You Using?</h2>
 
 <label for="web-browser">
     <select name="web-browser" id="web-browser">
@@ -48,5 +57,7 @@
         <option value="safari">Safari</option>
     </select>
 </label>
+</Form>
+
 </body>
 </html>
