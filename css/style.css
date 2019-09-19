@@ -14,26 +14,87 @@
     /*font-weight: bold;*/
 /*}*/
 .fancy-header {
-    color:floralwhite;
+    color:darkslateblue;
 }
 
 h1, #fir {
     text-align: center;
+
+}
+h2{
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
 }
 
-h1{
-    background-color: cornflowerblue;
+#visionhead {
+    text-align: center;
 }
-
 #fir {
     border: 1px solid powderblue;
     padding: 30px;
 }
 
-div{
-    background-image: url("../img/backgrr.jpg");
+#bigdiv {
+    background-color: aliceblue;
     background-repeat: no-repeat;
     background-position: cover;
-    background-size: 3000px 1000px;
-
+    background-size: 230px 1000px;
+    float: left;
 }
+#compvision{
+    text-align: center;
+}
+
+/*}*/
+/*#bigdivtwo{*/
+    /*float: left;*/
+    /*width: 33.33%;*/
+
+/*}*/
+ul {
+    background: aliceblue;
+    padding: 20px;
+}
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+li:hover {
+    background-color: #555;
+    color: white;
+}
+
+#protable,#coreval,#vision{
+    position:center;
+    color:darkslateblue;
+}
+
+p.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 500px;
+    background-color: aliceblue;
+    border: 80px solid #4CAF50;
+}
+
+
+
