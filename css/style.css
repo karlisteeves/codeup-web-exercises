@@ -31,7 +31,9 @@ h1{
 }
 
 div{
-    background-image: url("../img/laptop.jpg");
+    background-image: url("../img/backgrr.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: cover;
+    background-size: 3000px 1000px;
+
 }
