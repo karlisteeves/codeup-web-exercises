@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Search</title>
+</head>
+<body>
+<form method="post" action="https://request-inspector.glitch.me/">
+    <label for="propertytype">Property Type</label>
+    <input id="propertytype" name="propertytype" type="search">
+    <br>
+
+    <label for="squarefoot">Square Foot</label>
+    <select name="squarefoot" id="squarefoot">
+        <option value="small">600-800</option>
+        <option value="medium">800-1000</option>
+        <option value="large">1000-1800</option>
+    </select>
+
+    <br>
+    <label for="minprice">Minimum Price</label>
+    <input id="minprice" name="minprice" type="search">
+
+    <br>
+    <label for="maxprice">Maximum Price</label>
+    <input id="maxprice" name="maxprice" type="search">
+
+    <br>
+    <label for="zipcode">Zip Code</label>
+    <input id="zipcode" name="zipcode" type="search" required>
+
+    <br>
+    <label for="bedrooms">Bedrooms</label>
+    <select id="bedrooms" name="bedrooms">
+        <option value="one">Studio-1</option>
+        <option value="two">1-2</option>
+        <option value="three">2-4</option>
+    </select>
+
+        <br>
+        <label for="bathroom">Bathrooms</label>
+        <select id="bathroom" name="bathroom">
+            <option value="one">Outhouse</option>
+            <option value="two">1-2</option>
+            <option value="three">2-4</option>
+
+        </select>
+    <br>
+    <label for="pets">Pets</label>
+    <select id="pets" name="pets">
+        <option value="one">None</option>
+        <option value="two">Dog</option>
+        <option value="three">Cat</option>
+        <option value="four">Chinchilla</option>
+
+    </select>
+
+    <br>
+    <button type="submit">Search Now</button>
+</form>
+</body>
+</html>
