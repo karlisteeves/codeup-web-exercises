@@ -1,17 +1,37 @@
+
+/*#container {*/
+    /*margin: 50px auto;*/
+    /*width: 500px;*/
+    /*padding: 10px;*/
+/*}*/
+
+/*h1, #container {*/
+    /*color: blue;*/
+    /*text-decoration: underline;*/
+/*}*/
+
+/*{*/
+    /*font-weight: bold;*/
+/*}*/
 .fancy-header {
-    color:blue;
-}
-#container {
-    margin: 50px auto;
-    width: 500px;
-    padding: 10px;
+    color:floralwhite;
 }
 
-h1, #container {
-    color: blue;
-    text-decoration: underline;
+h1, #fir {
+    text-align: center;
 }
 
- {
-font-weight: bold;
+h1{
+    background-color: cornflowerblue;
+}
+
+#fir {
+    border: 1px solid powderblue;
+    padding: 30px;
+}
+
+div{
+    background-image: url("../img/laptop.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
 }
