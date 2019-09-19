@@ -1,27 +1,27 @@
-
 /*#container {*/
-    /*margin: 50px auto;*/
-    /*width: 500px;*/
-    /*padding: 10px;*/
+/*margin: 50px auto;*/
+/*width: 500px;*/
+/*padding: 10px;*/
 /*}*/
 
 /*h1, #container {*/
-    /*color: blue;*/
-    /*text-decoration: underline;*/
+/*color: blue;*/
+/*text-decoration: underline;*/
 /*}*/
 
 /*{*/
-    /*font-weight: bold;*/
+/*font-weight: bold;*/
 /*}*/
 .fancy-header {
-    color:darkslateblue;
+    color: darkslateblue;
 }
 
 h1, #fir {
     text-align: center;
 
 }
-h2{
+
+h2 {
     padding-top: 20px;
     padding-right: 30px;
     padding-bottom: 10px;
@@ -31,6 +31,7 @@ h2{
 #visionhead {
     text-align: center;
 }
+
 #fir {
     border: 1px solid powderblue;
     padding: 30px;
@@ -43,24 +44,42 @@ h2{
     background-size: 230px 1000px;
     float: left;
 }
-#compvision{
+
+#compvision {
     text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: xx-large;
+    color: darkslateblue;
 }
 
-/*}*/
-/*#bigdivtwo{*/
-    /*float: left;*/
-    /*width: 33.33%;*/
+table, th, td {
+    border: 1px solid black;
+    padding: 15px;
 
-/*}*/
+}
+
+th {
+    background-color: aliceblue;
+    color: cornflowerblue;
+
+}
+
+#prodtable {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    color: darkslateblue;
+}
+
 ul {
     background: aliceblue;
     padding: 20px;
 }
+
 ul li {
     background: #cce5ff;
     margin: 5px;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -82,9 +101,9 @@ li:hover {
     color: white;
 }
 
-#protable,#coreval,#vision{
-    position:center;
-    color:darkslateblue;
+#coreval, #vision {
+    position: center;
+    color: darkslateblue;
 }
 
 p.sticky {
