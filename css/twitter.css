@@ -64,12 +64,13 @@ a {
 }
 
 .profile-form{
-    margin: auto;
     line-height: 80px;
-
+    align-content: center;
+    float:right;
 
 
 }
+
 .btn {
     border: 1px solid var(--main-link-color);
     color: var(--main-link-color);
@@ -92,4 +93,51 @@ a {
 }
 .text-muted {
     color: var(--main-link-color);
+}
+
+.profile-details{
+    float: left;
+    margin: 0.5em 0.5em;
+    width: calc(25%- 1em);
+
+}
+.profile-items{
+    padding:none;
+    list-style: none;
+}
+.timeline{
+    float:left;
+    margin: .5em .5em;
+    width: calc(50%- 1em);
+
+}
+.who-to-follow{
+    float:right;
+    margin: 0.5em 0.5em;
+    width: calc(25% - 1em);
+
+}
+.media{
+    width:100%;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--separator-color);
+    padding: .5em;
+    overflow: auto;
+
+}
+.media-body{
+    width: calc(100%- 100px);
+    float: left;
+
+
+}
+
+.media-image{
+    float:left;
+    width: 50px;
+    margin-top: 1.33em;
+
+}
+.container{
+    margin-top: 2em;
 }
