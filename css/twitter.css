@@ -30,6 +30,7 @@ a {
     background: var(--light-bg);
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 .nav {
     list-style-type: none;
@@ -52,13 +53,22 @@ a {
 .profile {
     background: var(--light-bg);
     height: 80px;
+    float:top;
+    top:80px;
+
 }
-/*.profile-image{*/
-    /*position: absolute;*/
-/*}*/
+.profile-image{
+    position:absolute;
+    top: 30%;
+
+}
+
 .profile-form{
-    float:right;
+    margin: auto;
     line-height: 80px;
+
+
+
 }
 .btn {
     border: 1px solid var(--main-link-color);
