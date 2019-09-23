@@ -8,6 +8,10 @@ body, html {
 }
 .message-info {
     color:darkslateblue;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-radius: 5px;
     padding:10px;
     margin: 10px;
     background-color: powderblue;
@@ -16,11 +20,19 @@ body, html {
 .message-success {
     padding: 10px;
     margin: 10px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-radius: 5px;
     color: darkgreen;
     background-color: palegreen;
 }
 
 .message-warning{
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-radius: 5px;
     padding: 10px;
     margin: 10px;
     color:orange;
@@ -28,8 +40,12 @@ body, html {
 }
 
 .message-error{
-    padding:10px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    border-radius: 5px;
     margin: 10px;
+    padding:10px;
     color:darkred;
     background-color: indianred;
 }
