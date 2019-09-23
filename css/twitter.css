@@ -33,12 +33,13 @@ a {
 }
 
 .nav-item {
-    margin: 10px;
+    display: inline-block;
+    /*margin: 10px;*/
     padding: 10px;
 
 }
 .nav {
-    display: inline-block;
+    /*display: inline-block;*/
     list-style-type: none;
     padding: 1.5em;
     margin: 0;
