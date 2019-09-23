@@ -57,6 +57,7 @@ fieldset {
 }
 
 .form-control {
+    box-sizing: border-box;
     padding-top: .5em;
     padding-bottom: .5em;
     margin-bottom: 4px;
@@ -73,6 +74,7 @@ fieldset {
 }
 
 .btn {
+    box-sizing: border-box;
     width: 100%;
 
     padding: 8px;

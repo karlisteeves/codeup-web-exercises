@@ -15,6 +15,7 @@ body, html {
     padding:10px;
     margin: 10px;
     background-color: powderblue;
+    width: 600px;
 
 }
 
@@ -27,6 +28,7 @@ body, html {
     border-radius: 5px;
     color: darkgreen;
     background-color: palegreen;
+    width: 600px;
 }
 
 .message-warning{
@@ -38,6 +40,7 @@ body, html {
     margin: 10px;
     color:orange;
     background-color: lightgoldenrodyellow;
+    width: 600px;
 }
 
 .message-error{
@@ -49,4 +52,5 @@ body, html {
     padding:10px;
     color:darkred;
     background-color: indianred;
+    width: 600px;
 }
