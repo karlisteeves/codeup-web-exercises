@@ -102,7 +102,7 @@ a {
 
 }
 .profile-items{
-    padding:none;
+    padding: 0;
     list-style: none;
 }
 .timeline{
