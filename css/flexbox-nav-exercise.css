@@ -6,29 +6,64 @@ body {
     margin: 0;
 }
 nav {
+    display: flex;
     background: lightgrey;
     /*display:flex;*/
     /*flex-direction: row;*/
 }
 ul {
+    margin:auto;
     list-style: none;
     padding: 0;
-    margin: 0;
     display:flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
 }
 
 nav a {
-    /*display: flex;*/
     box-sizing: border-box;
     text-decoration: none;
     color: black;
     font-family: Verdana, serif;
+    font-size: .7em;
+    font-weight: bold;
     display: inline-block; /* inline-block to increase clickable area beyond the text */
-    padding: 1em;
+    padding: .5em;
 
 }
+
+/*nav i {*/
+    /*display: flex;*/
+    /*padding: 1em;*/
+/*}*/
+
 nav a:hover {
 
-    background: black;
+    background: blue;
+}
+
+#center {
+    position: absolute;
+    top: -.63em;
+    left: 13em;
+    display: flex;
+    align-content: center;
+    /*margin: auto;*/
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
+#left {
+    padding: .5em;
+    display: flex;
+    align-content: flex-start;
+}
+
+#right {
+    padding: .5em;
+    display: flex;
+    align-content: space-between;
+    margin-left: 64em;
+
 }
