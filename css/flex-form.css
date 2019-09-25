@@ -61,16 +61,17 @@ body {
     /* flex container */
 }
 .flex-form {
-    /*width: 74%;*/
+
     display:flex;
-    justify-content: space-between;
-    flex-grow: .3;
+
+
 
 
 
     /* flex items */
 }
 .destination {
-    flex-grow: 2;
+
+    flex-basis: 30%;
 
 }
