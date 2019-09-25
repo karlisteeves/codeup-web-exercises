@@ -2,28 +2,33 @@
     box-sizing: border-box;
 }
 body {
+
     margin: 0;
 }
 nav {
-    background: #333333;
-    display:flex;
-    flex-direction: row;
+    background: lightgrey;
+    /*display:flex;*/
+    /*flex-direction: row;*/
 }
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display:flex;
+    flex-direction: row;
 }
 
 nav a {
     /*display: flex;*/
     box-sizing: border-box;
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: Verdana, serif;
     display: inline-block; /* inline-block to increase clickable area beyond the text */
     padding: 1em;
+
 }
 nav a:hover {
+
     background: black;
 }
