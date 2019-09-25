@@ -61,9 +61,10 @@ body {
     /* flex container */
 }
 .flex-form {
-    width: 74%;
+    /*width: 74%;*/
     display:flex;
     justify-content: space-between;
+    flex-grow: .3;
 
 
 
