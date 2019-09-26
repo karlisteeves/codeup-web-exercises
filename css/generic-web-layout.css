@@ -1,0 +1,94 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: .5fr repeat(3, 2fr) repeat(2, 1fr) .5fr;
+}
+
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+nav {
+    grid-area: 1 / 1 / 2 / 6;
+    background :black;
+
+}
+
+.navbar {
+    list-style: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+li{
+    padding: .5em;
+}
+
+nav2 {
+    grid-area: 2 / 1 / 8 / 2;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.navbar2{
+    list-style: none;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.link{
+    display: flex;
+    padding: 10px;
+}
+.div4 {
+    background: black;
+    grid-area: 7 / 2 / 8 / 6;
+}
+
+.div5 {
+    background: darkgrey;
+    grid-area: 6 / 2 / 7 / 6;
+}
+
+.div6 {
+    background:blue;
+    grid-area: 2 / 5 / 6 / 6;
+}
+
+.div7 {
+    background:white;
+    grid-area: 2 / 2 / 6 / 5;
+    margin-bottom: 200px;
+}
+
+h1{
+    color: teal;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    color:black;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+#numbar {
+    display: flex;
+    justify-content: center;
+
+
+}
+body{
+    color: blue;
+}
