@@ -15,8 +15,7 @@ body {
     display: grid;
     grid-template-columns:  1fr 400px 400px 400px 1fr;
     grid-gap: 1em;
-    height: 1vw;
-/* need to adjust the height of the wrapper, i'm unsure how to so let's ask
+    height: 100vw;
 
  */
     /* TODO: make the wrapper a grid container */
@@ -36,15 +35,28 @@ header {
     background: purple;
     grid-column-start: 2;
     grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
 
     /* TODO: define the grid area of header such that it takes up the first row and middle three columns */
 }
 
 nav {
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     /* TODO: define the grid area of nav such that it takes up the second column of the second row  */
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
     /* TODO: define the grid area of main such that it takes up the columns 3 and 4 of the second row  */
     /* TODO: make main a grid container as well */
     /* TODO: define main to contain three columns that together take up equally the full width of main and have a 1em gap between grid items */
@@ -52,6 +64,8 @@ main {
 }
 
 header ul {
+    display: flex;
+    justify-content: flex-start;
     /* TODO: use flex box to horizontally line up all list items */
 }
 
@@ -60,8 +74,9 @@ header a {
 }
 
 header ul li:nth-of-type(2) {
+
     /* TODO: uncomment the next line and add a value which causes Flexbox to automatically fill in extra space on it's left side */
-    /*margin-left: ;*/
+    margin-left: auto;
     border-right: 1px solid white;
 }
 
@@ -72,6 +87,12 @@ header a:hover {
 
 .header-background {
     background: purple;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    /*Ask about this. Take up the first row or column? If i just put row, it aligns it vertically.
     /* TODO: define the grid area of this element to take up the entire first row of the .container grid  */
 }
 
@@ -116,6 +137,9 @@ nav a:hover {
     height: 200px;
     border-radius: 10px;
     position: relative;
+    /*transition: width .2s black;*/
+
+}
     /* TODO: add a property that causes a transition of the border from lightgrey to near black in .2 seconds */
 }
 
