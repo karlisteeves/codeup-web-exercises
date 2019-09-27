@@ -1,7 +1,8 @@
+
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 40px repeat(3, 2fr) 1fr .5fr 60px;
+    grid-template-rows: 40px 2fr 1fr .5fr 60px;
 }
 
 
@@ -70,6 +71,7 @@ nav a:hover {
 
 .div3 {
     background-color: #F0F0F0;
+    grid-area: 2 / 1 / 8 / 2;
 
 }
 
@@ -104,9 +106,7 @@ nav a:hover {
 .div7 {
     background: white;
     grid-area: 2 / 2 / 6 / 5;
-    margin-bottom: 200px;
 }
-
 main {
     grid-area: main;
     display: grid;
@@ -116,9 +116,6 @@ main {
     grid-row-gap: 6em;
 }
 
-main article {
-    flex-basis: 400px;
-}
 
 h1 {
     color: teal;
@@ -130,15 +127,15 @@ h1 {
     margin-bottom: 1em;
 }
 
-.ads div:nth-of-type(1) {
+.ads div:nth-of-type(odd) {
     flex-grow: 1;
 }
 
-.ads div:nth-of-type(2) {
+.ads div:nth-of-type(even) {
     flex-grow: 1;
 }
 
-.ads div:nth-of-type(3) {
+.ads div:nth-of-type(odd) {
     flex-grow: 1;
 }
 
@@ -168,7 +165,7 @@ p {
 }
 
 .numbers {
-    /*margin: 2em 5em;*/
+
     grid-column: 1 / -1;
     display: flex;
 }
@@ -185,10 +182,10 @@ p {
     text-decoration: none;
     color: black;
     display: inline-block;
-    width: 2.2em;
-    height: 2em;
-    line-height: 2em;
-    margin-top: 50em;
+    width: 2em;
+    height: 0em;
+    line-height: 0em;
+    margin-top: em;
     text-align: center;
 }
 
@@ -199,7 +196,7 @@ p {
 
 
 footer section {
-    margin-top: 115px;
+    margin-top: 10px;
     padding: 2.5em 1rem;
 }
 
