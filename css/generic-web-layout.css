@@ -105,12 +105,13 @@ nav a:hover {
 
 .div7 {
     background: white;
-    grid-area: 2 / 2 / 6 / 5;
+    grid-area: 2 / 2 / 6 / 6;
 }
+
 main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 6fr 3fr;
+    grid-template-columns: 2fr 1fr;
     padding: 1em;
     grid-column-gap: 1em;
     grid-row-gap: 6em;
