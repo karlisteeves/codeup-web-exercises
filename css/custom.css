@@ -1,3 +1,33 @@
+
+/*ask about better positioning */
+
+.jumbotron{
+    position: relative;
+    width: 100%;
+    background: white;
+}
+
+h1{
+    background: white;
+    opacity: .6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link{
+    display:flex;
+    justify-content: right;
+}
+
+ul{
+    list-style: none;
+}
+
 #signup{
-    margin-left: 640px;
+    color: black;
+    list-style:none;
 }
