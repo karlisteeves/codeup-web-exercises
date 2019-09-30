@@ -1,48 +1,88 @@
 /*small desktop, ipad pro, default layout*/
 
-    body {
-        margin: 0;
-    }
+body {
+    margin: 0;
+}
+
+.alert-info {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px lightgrey;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul a {
+    color: blue;
+    background-color: lightgrey;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -30px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    list-style: none;
+
+}
+
+.nav-links {
+    text-decoration: underline;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Larger Desktops */
+
+@media screen and (min-width: 786px) {
+
     .alert-info {
+        display: none;
+    }
+
+    h1 {
         display: flex;
-        justify-content: center;
-        background-color: lightblue;
-        padding: 10px;
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-        border: 2px lightgrey;
-
-    }
-    a {
-        color: black;
-        text-decoration: none;
+        justify-content: flex-start;
     }
 
-    ul a{
-        color:blue;
-        background-color: lightgrey;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: -30px;
-        margin-right: 5px;
+    ul a {
+        background: white;
+        position: relative;
+        margin: 7px;
+        margin-top: -60px;
+
+    }
+
+    .nav-links{
         display: flex;
-        justify-content: center;
-        text-decoration: underline;
-        list-style: none;
-
-    }
-    .nav-links {
-        text-decoration: underline;
-        list-style: none;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
-    img{
-        width: 100%;
+    .main{
+        float: left;
+        width: 50%
     }
 
-    h1{
-        display: flex;
-        justify-content: center;
+    .sub-section{
+        float: right;
+        width: 50%;
     }
