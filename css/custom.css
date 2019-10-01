@@ -1,10 +1,12 @@
 
-/*ask about better positioning */
+
 
 .jumbotron{
     position: relative;
     width: 100%;
-    background: white;
+    background-size: cover;
+    text-align: center;
+
 }
 
 h1{
@@ -15,19 +17,6 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    text-align: center;
+
 }
 
-.nav-link{
-    display:flex;
-    justify-content: right;
-}
-
-ul{
-    list-style: none;
-}
-
-#signup{
-    color: black;
-    list-style:none;
-}

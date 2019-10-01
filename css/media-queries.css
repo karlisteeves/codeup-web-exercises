@@ -71,18 +71,19 @@ h1 {
 
     }
 
-    .nav-links{
+    .nav-links {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
     }
 
-    .main{
+    .main {
         float: left;
         width: 50%
     }
 
-    .sub-section{
+    .sub-section {
         float: right;
         width: 50%;
     }
+}
