@@ -57,20 +57,28 @@
     </div>
 
     <h6>Build your own pizza!</h6>
-    <ul class="nav nav-tabs">
+
+    <ul class="nav nav-tabs" id="myTab" role="tabList">
+
         <li class="nav-item">
-            <a class="nav-link active" href="#">❶ Size and Crust</a>
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">❶ Size and Crust</a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link" href="#">❷ Cheese and Sauce</a>
+            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">❷ Cheese and Sauce</a>
         </li>
+
         <li class="nav-item">
-            <a class="nav-link" href="#">❸ Toppings</a>
+            <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">❸ Toppings</a>
         </li>
+
     </ul>
+
+
     <form action="https://webhook.site/146da1db-2b7e-44d1-99bc-c7d17c814959" method="POST">
-        <div class="tab-content" id="tab-content">
-            <div class="tab-pane fade show active" id="size-crust" role="tabpanel" aria-labelledby="size-crust-tab">
+        <div class="tab-content" id="myTabContent"> <!-- start tabs-->
+
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="home-tab">
 
                 <!-- Size and Crust -->
                 <div class="card">
@@ -126,12 +134,13 @@
                         </div>
                     </div>
                     <div class="card-footer text-right">
-                        <a href=#cheesecard ><buttontype="button" class="btn btn-primary"> Next Step <i class="fas fa-chevron-right"></i></a></button>
+                        <button type="button" class="btn btn-primary"> Next Step <i class="fas fa-chevron-right"></i></a></button>
                     </div>
                 </div>
-
             </div>
-            <div class="tab-pane fade" id="cheese-sauce" role="tabpanel" aria-labelledby="cheese-sauce-tab">
+
+
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 
                 <!-- Cheese and Sauce -->
                 <div>
@@ -203,10 +212,12 @@
                     </div>
                 </div>
 
+
             </div>
             <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="toppings-tab">
-
+            </div>
                 <!-- Toppings -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <div class="card">
                     <div class="card-header bg-primary text-white">
                         Choose Toppings
@@ -300,9 +311,12 @@
                         <button type="submit" class="btn btn-primary">Checkout <i class="fas fa-shopping-cart"></i></button>
                     </div>
                 </div>
+            </div>
+            </div> <!--closing tab content-->
 
             </div>
         </div>
+    </form>
 </container>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
