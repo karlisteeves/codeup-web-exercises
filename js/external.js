@@ -21,21 +21,26 @@ var googleHours = prompt ("How many hours have you worked for google this week?"
 var amazonHours = prompt ("How many hours have you worked for amazon this week?");
 var facebookHours = prompt  ("How many hours have you worked for Facebook this week?");
 function weekPay (googleHours, amazonHours, facebookHours){
-    var googlePay = 400 * googleHours;
-    var amazonPay = 380 * amazonHours;
-    var facebookPay = 350 * facebookHours;
+    var googlePay = 400 * parseInt(googleHours);
+    var amazonPay = 380 * parseInt(amazonHours);
+    var facebookPay = 350 * parseInt(facebookHours);
+
+
+
+
+
     return googlePay + amazonPay + facebookPay;
 }
-console.log (weekPay(googleHours + amazonHours + facebookHours));
+console.log (weekPay(googleHours, amazonHours, facebookHours));
 
-//ask about this one it is a tricky thing//
-
-var availableSpace = true;
-var scheduleSpace = true;
-var enrollmentStatus = availableSpace && scheduleSpace;
-console.log(enrollmentStatus);
-
+// //ask about this one it is a tricky thing//
 //
+// var availableSpace = true;
+// var scheduleSpace = true;
+// var enrollmentStatus = availableSpace && scheduleSpace;
+// console.log(enrollmentStatus);
+//
+// //
 
 
 var username= 'codeup';
