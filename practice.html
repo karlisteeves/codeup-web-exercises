@@ -1,75 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <title>Practice</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-     <link rel="stylesheet" href="css/practice.css">
-
+    <title>JS Practice</title>
+    <meta charset = "UTF-8" />
 </head>
+<script>
+    function priceDay(daysRented){
+      return 3 * daysRented;
+    }
+    console.log(priceDay(10));
+
+    //Did I do this right??//
+//
+    function weekPay (googleHours, amazonHours, facebookHours){
+        var googlePay = 400 * googleHours;
+        var amazonPay = 380 * amazonHours;
+        var facebookPay = 350 * facebookHours;
+        return googlePay + amazonPay + facebookPay;
+    }
+console.log (weekPay(6, 4, 10));
+
+//     //I'm pretty sure I did this right//
+//
+  var availableSpace = true;
+  var scheduleSpace = true;
+  var enrollmentStatus = availableSpace && scheduleSpace;
+    console.log(enrollmentStatus);
+
+    //got this Right //
+
+    var numberItems = 1;
+    var offerValid = true;
+    var premiumMember = true;
+    var purchaseProduct = (premiumMember || numberItems >= 2) && offerValid;
+    console.log(purchaseProduct);
+
+    //put what you want to prioritize in parenthesis. The code will solve that first and move on past there//
+
+
+    var username = 'codeup';
+    var password = 'notastrongpassword';
+    var characterNumber = 5;
+    var includeUsername = true;
+    var maxUsername = 16;
+    var pwordusernameWhitespace = true;
+
+    var login = characterNumber >=5 && includeUsername && maxUsername <= 20 && pwordusernameWhitespace;
+    console.log(login);
+
+    //I did this very difficulty//
+
+    var username= 'codeup';
+    var password = 'notastrongpassword';
+
+    password.length >= 5 && password.indexOf(username) === -1 && username.length <= 20 && username === username.trim() && password === password.trim();
+
+
+    //Go back and write the last three in function format! //
+    //
+
+
+//
+//
+//
+
+
+
+
+
+
+
+</script>
+
 <body>
-<header>
-    <h1 class="text-center text-secondary">About Me</h1>
-</header>
 
-<!-- my image -->
-
-<main>
-    <div class="container">
-    <div class="row">
-    <div class="col-12 col-md-6 text-center">
-        <img id="cat" src="img/catcat.jpg" alt="cats" style= "width:400px;height:400px;" >
-
-        <div class="col-lg-3 col-md-6">
-            Consectetur doloribus dolor quia iste sint! Totam suscipit possimus deserunt adipisci beatae? Mollitia
-                explicabo voluptates hic delectus voluptates commodi necessitatibus perferendis. Rem ipsam itaque illo perspiciatis
-                illo doloribus. Enim iste.
-        </div>
-    </div>
-
-
-        <!-- Contact Me -->
-
-        <div class="col-12 d-md-none contact-me">
-
-        </div>
-</div>
-</div>
-</main>
-
-<div class="container text-center">
-    <div class="row">
-
-        <!-- Do the HEADER LAST, the contents are in a different order and may use the display-none feature-->
-
-        <!--About Me header -->
-
-        <!--Photo of Cat. Find out how to add a grid. Does the CSS link have to come before or after the Bootstrap link? -->
-        <!-- Contact me box-->
-        <div class="col-12 col-md-6">
-            <p>Contact Me</p>
-        </div>
-
-
-
-<!-- different container for my footer -->
-<div class="container-fluid">
-    <div class="row m-3">
-        <div class="col-lg-3 col-md-6">
-            <p class="text-center">Copyright 2019</p>
-            <p class="text-center">About Me</p>
-            <p class="text-center">Contact Me</p>
-        </div>
-
-    </div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
