@@ -5,9 +5,19 @@ console.log(message);
 alert("Welcome to my website!")
 
 var color = prompt("What's your Favorite Color?");
-alert( "Hey, " + color + " is my favorite color, too!");
-
-//
+if (color === "red") {
+    alert("That's my favorite color, too!");
+} else if (color === "blue") {
+    alert("I hate that color.");
+} else if (color === "pink") {
+    alert("Pink is pretty awesome.");
+} else if (color === "green") {
+    alert ("Green like boogies?!")
+} else if (color === "purple") {
+    alert ("Purple is the color of Royalty!")
+} else {
+    alert("That color is okay.")
+}
 
 
 var daysRented = prompt( "How many days have you had this rental?");
@@ -15,6 +25,9 @@ function priceDay(daysRented){
     return 3 * daysRented;
 }
 console.log(priceDay(daysRented));
+
+
+
 
 //
 var googleHours = prompt ("How many hours have you worked for google this week?");
@@ -25,22 +38,27 @@ function weekPay (googleHours, amazonHours, facebookHours){
     var amazonPay = 380 * parseInt(amazonHours);
     var facebookPay = 350 * parseInt(facebookHours);
 
-
-
-
-
     return googlePay + amazonPay + facebookPay;
 }
 console.log (weekPay(googleHours, amazonHours, facebookHours));
 
 // //ask about this one it is a tricky thing//
 //
-// var availableSpace = true;
-// var scheduleSpace = true;
-// var enrollmentStatus = availableSpace && scheduleSpace;
-// console.log(enrollmentStatus);
+var availableSpace = true;
+var scheduleSpace = true;
+var enrollmentStatus = availableSpace && scheduleSpace;
+console.log(enrollmentStatus);
+
 //
-// //
+
+
+var numberItems = 1;
+var offerValid = true;
+var premiumMember = true;
+var purchaseProduct = (premiumMember || numberItems >= 2) && offerValid;
+console.log(purchaseProduct);
+
+
 
 
 var username= 'codeup';
