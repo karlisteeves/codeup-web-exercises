@@ -17,11 +17,11 @@ function multiplyNumber (x, y){
 console.log(multiplyNumber (2, 10));
 
 
-var divideNumber = function(x, y){
+var divideNum = function(x, y){
     return (x / y);
 }
 
-console.log(divideNumber(20,2));
+console.log(divideNum(20,2));
 
 var multNumber = function(x, y){
     return (x * y);

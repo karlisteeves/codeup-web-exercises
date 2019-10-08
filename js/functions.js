@@ -88,13 +88,16 @@ console.log(isTwo(random));
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+//
+// function calculateTip(tipPercentage, billTotal){
+//     return (tipPercentage * billTotal);
+//
+// }
+//
+// console.log(calculateTip(0.25, 25.50));
 
-function calculateTip(tipPercentage, billTotal){
-    return (tipPercentage * billTotal);
 
-}
 
-console.log(calculateTip(0.25, 25.50));
 /**
  *
  * TODO:
@@ -109,6 +112,14 @@ console.log(calculateTip(0.25, 25.50));
  */
 
 
+// function calculateTip(){
+//     var billTotal = parseInt(prompt("How much was your bill total?"));
+//     var tipPercentage =parseInt(prompt("How nuch would you like to leave for a tip?"));
+//     return (tipPercentage * billTotal * .01);
+//
+// }
+//
+// console.log(calculateTip());
 
 /**
  * TODO:
@@ -116,6 +127,16 @@ console.log(calculateTip(0.25, 25.50));
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+function applyDiscount(){
+    var originalPrice = parseFloat(prompt("How much is this item?"));
+    var discountPercent = parseFloat(prompt("How much is this discount?")) * .01;
+    return originalPrice - (originalPrice * discountPercent) ;
+
+}
+
+console.log(applyDiscount());
+
 
 /**
  * TODO:
@@ -127,7 +148,7 @@ console.log(calculateTip(0.25, 25.50));
  * Example:
  * > var originalPrice = 100;
  * > var dicountPercent = .2; // 20%
- * > applyDiscount(originalPrice, dicountPercent) // 80
+ * > applyDiscount(originalPrice, discountPercent) // 80
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
