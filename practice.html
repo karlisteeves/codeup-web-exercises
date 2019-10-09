@@ -5,71 +5,150 @@
     <meta charset = "UTF-8" />
 </head>
 <script>
-    function priceDay(daysRented){
-      return 3 * daysRented;
+//     function priceDay(daysRented){
+//       return 3 * daysRented;
+//     }
+//     console.log(priceDay(10));
+//
+//     //Did I do this right??//
+// //
+//     function weekPay (googleHours, amazonHours, facebookHours){
+//         var googlePay = 400 * googleHours;
+//         var amazonPay = 380 * amazonHours;
+//         var facebookPay = 350 * facebookHours;
+//         return googlePay + amazonPay + facebookPay;
+//     }
+// console.log (weekPay(6, 4, 10));
+//
+// //     //I'm pretty sure I did this right//
+// //
+//   var availableSpace = true;
+//   var scheduleSpace = true;
+//   var enrollmentStatus = availableSpace && scheduleSpace;
+//     console.log(enrollmentStatus);
+//
+//     //got this Right //
+//
+//     var numberItems = 1;
+//     var offerValid = true;
+//     var premiumMember = true;
+//     var purchaseProduct = (premiumMember || numberItems >= 2) && offerValid;
+//     console.log(purchaseProduct);
+//
+//     //put what you want to prioritize in parenthesis. The code will solve that first and move on past there//
+//
+//
+//     var username = 'codeup';
+//     var password = 'notastrongpassword';
+//     var characterNumber = 5;
+//     var includeUsername = true;
+//     var maxUsername = 16;
+//     var pwordusernameWhitespace = true;
+//
+//     var login = characterNumber >=5 && includeUsername && maxUsername <= 20 && pwordusernameWhitespace;
+//     console.log(login);
+//
+//     //I did this very difficulty//
+//
+//     var username= 'codeup';
+//     var password = 'notastrongpassword';
+//
+//     password.length >= 5 && password.indexOf(username) === -1 && username.length <= 20 && username === username.trim() && password === password.trim();
+//
+//
+//     //Go back and write the last three in function format! //
+//     //
+//
+//
+// //
+// //
+// //
+
+
+
+
+//Make a function named identity(input) that returns the input exactly as provided.//
+
+    function identity(input){
+        return input;
     }
-    console.log(priceDay(10));
 
-    //Did I do this right??//
-//
-    function weekPay (googleHours, amazonHours, facebookHours){
-        var googlePay = 400 * googleHours;
-        var amazonPay = 380 * amazonHours;
-        var facebookPay = 350 * facebookHours;
-        return googlePay + amazonPay + facebookPay;
+console.log(identity("borger"));
+
+
+    //Make a function named addFive(input) that adds five to some input.//
+
+    function addFive(num){
+        return num + 5;
     }
-console.log (weekPay(6, 4, 10));
 
-//     //I'm pretty sure I did this right//
+console.log(addFive(32));
+
+    //Make a function named isMultipleOf(target, n) which checks if target is evenly divisible by n//
+
+    function isMultipleOf(target, n){
+        return (target / n) % 2 === 0;
+    }
+
+console.log(isMultipleOf(12, 2));
+
+    //Make a function named hasLowerCase(string) that returns if a string has any lower cased letter//
+
+    // function hasLowerCase(string) {
+//     if (string === string.toLowerCase()) {
+//         return string;
+//     }
+// }
+
+//the above is how you would get it to return if the string was only lower case.//
+
+function hasLowerCase(str) {
+    if (/[a-z]/.test(str)) {
+        return str;
+    }
+}
+
+console.log(hasLowerCase("HELLLLLo"));
+
+
+//Make a function named isSpace(letter) that returns if a character is a space character//
+
+//     function isSpace(letter){
+//         if (indexOf(letter(" ")) >= 0);
+//         return true;
+//     }
 //
-  var availableSpace = true;
-  var scheduleSpace = true;
-  var enrollmentStatus = availableSpace && scheduleSpace;
-    console.log(enrollmentStatus);
+// console.log(isSpace("this has space"));
 
-    //got this Right //
+    //Make a function named notZero(input) that returns true if the input is not zero//
 
-    var numberItems = 1;
-    var offerValid = true;
-    var premiumMember = true;
-    var purchaseProduct = (premiumMember || numberItems >= 2) && offerValid;
-    console.log(purchaseProduct);
+    function notZero(num) {
+        if (num === 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 
-    //put what you want to prioritize in parenthesis. The code will solve that first and move on past there//
+            console.log(notZero(3));
 
+    //Write a function named double(n) that returns a number times two//
 
-    var username = 'codeup';
-    var password = 'notastrongpassword';
-    var characterNumber = 5;
-    var includeUsername = true;
-    var maxUsername = 16;
-    var pwordusernameWhitespace = true;
+    function double(n){
+        return n * 2;
+    }
 
-    var login = characterNumber >=5 && includeUsername && maxUsername <= 20 && pwordusernameWhitespace;
-    console.log(login);
+console.log(double(16));
 
-    //I did this very difficulty//
+    //Write a function named triple(n) that returns a number times 3//
 
-    var username= 'codeup';
-    var password = 'notastrongpassword';
+    function triple(n){
+        return n * 3;
+    }
 
-    password.length >= 5 && password.indexOf(username) === -1 && username.length <= 20 && username === username.trim() && password === password.trim();
+console.log(triple(3));
 
-
-    //Go back and write the last three in function format! //
-    //
-
-
-//
-//
-//
-
-
-
-
-
-
-
+    //Write a function named quadruple(n) that returns a number times 4//
 </script>
 
 <body>
