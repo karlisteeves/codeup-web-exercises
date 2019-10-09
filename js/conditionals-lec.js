@@ -207,18 +207,18 @@ console.log(checkIfGameIsOver(0));
 
 // =============== IF / ELSE IF/ELSE STATEMENT EXAMPLES ================
 //Together: Write an if/else if/else statement that alerts "It's snowing!" if weather is equal to "snowing", alerts "It's raining" if weather is equal to "raining", alerts "have a nice day" for all other cases
-
-var weather = "windy";
-if(weather === "snowing"){
-    alert("It's snowing!");
-} else if (weather === "raining"){
-    alert ("It's raining!");
-} else if (weather === "sunny") {
-    alert("It's sunny!");
-} else {
-    alert("Have a nice day!");
-
-}
+//
+// var weather = "windy";
+// if(weather === "snowing"){
+//     alert("It's snowing!");
+// } else if (weather === "raining"){
+//     alert ("It's raining!");
+// } else if (weather === "sunny") {
+//     alert("It's sunny!");
+// } else {
+//     alert("Have a nice day!");
+//
+// }
 
 //Together: refactor the above statement as a function
 
@@ -236,34 +236,52 @@ if(weather === "snowing"){
 // } else {
 //     alert(pizzaPreference + " isn't my favorite, but let's order some!");
 // }
-
-
+//
+//
 
 
 //TODO: Write a function that accepts a string that is a traffic light color as an input. When this function is called, it should return a message informing the user what to do when approaching that color light at an intersection.
 
 
-
-function trafficLightColor (color) {
-    if (color === "red") {
-        alert("Come to a full stop.");
-    } else if (color === "yellow") {
-        alert("Slow down!");
-    } else (color === "green") ;
-    {
-        alert("Go go go!");
-    }
-
-}
-
-console.log(trafficLightColor("red"));
+//
+// function trafficLightColor (color) {
+//     if (color === "red") {
+//         return "Come to a full stop.";
+//     } else if (color === "yellow") {
+//         return "Slow down!";
+//     } else if (color === "green"){
+//         return "Go go go!";
+//     } else {
+//         return "Proceed with caution.";
+//     }
+//
+// }
+//
+// console.log(trafficLightColor("red"));
 
 
 // ================ NESTED STATEMENTS ===============
-//Together: If user is under 15, they are not eligible for a learners permit, else they are. If they are eligible, check age. If they are 15 they are eligible for a learners permit, if they are 16 or older and have a permit, they are eligible for license, if they are 16 or older and do not have a permit, they are not eligble for a license. 
+//Together: If user is under 15, they are not eligible for a learners permit, else they are.
+// If they are eligible, check age. If they are 15 they are eligible for a learners permit, if
+// they are 16 or older and have a permit, they are eligible for license,
+// if they are 16 or older and do not have a permit, they are not eligble for a license.
 
 
+var userAge = 13;
+var hasPermit = false;
 
+
+if(userAge < 15){
+    alert("Sorry, you're not eligible for a permit.");
+} else {
+    if(userAge ===15){
+        alert("You can have a permit.");
+    } else if (userAge >= 16 && hasPermit){
+        alert("You can have a license!");
+    } else if (userAge >= 16 && !hasPermit){
+        alert("You need a permit, first.");
+    }
+}
 
 
 
