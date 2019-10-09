@@ -1,12 +1,12 @@
 "use strict";
 
 
-// function sayHello (name){
-//     return "Hello " + name + "Karli";
-//
-// }
-//
-// console.log(sayHello(name));
+function sayHello (name){
+    return "Hello " + name;
+
+}
+
+console.log(sayHello("rebbie"));
 
 /**
  * TODO:
@@ -19,14 +19,18 @@
 
 
 
-function sayHello ( name ){
-    var helloMessage = "Hello " + name;
+// function sayHello ( name ){
+//     var helloMessage = "Hello " + name;
+//
+//     return helloMessage;
+// }
+//
+//
+// console.log(sayHello("Karli"));
 
-    return helloMessage;
-}
+var helloMessage = sayHello("Karli");
 
-
-console.log(sayHello("Karli"));
+console.log(sayHello(helloMessage));
 
 
 /**
@@ -89,12 +93,12 @@ console.log(isTwo(random));
  * number)
  */
 //
-// function calculateTip(tipPercentage, billTotal){
-//     return (tipPercentage * billTotal);
-//
-// }
-//
-// console.log(calculateTip(0.25, 25.50));
+function calculateTip(tipPercentage, billTotal){
+    return (tipPercentage * billTotal);
+
+}
+
+console.log(calculateTip(0.25, 25.50));
 
 
 
@@ -112,14 +116,15 @@ console.log(isTwo(random));
  */
 
 
-// function calculateTip(){
-//     var billTotal = parseInt(prompt("How much was your bill total?"));
-//     var tipPercentage =parseInt(prompt("How nuch would you like to leave for a tip?"));
-//     return (tipPercentage * billTotal * .01);
-//
-// }
-//
-// console.log(calculateTip());
+function calculateTip(){
+    var billTotal = parseInt(prompt("How much was your bill total?"));
+    var tipPercentage =parseInt(prompt("How nuch would you like to leave for a tip?"));
+    alert("With a bill of " +billTotal + "and a tip percentage of " +tipPercentage +", you should add a tip of" +calculateTip(tipPercentage, billTotal));
+    return (tipPercentage * billTotal * .01);
+
+}
+
+console.log(calculateTip());
 
 /**
  * TODO:
