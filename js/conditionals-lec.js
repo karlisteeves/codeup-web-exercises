@@ -267,21 +267,21 @@ console.log(checkIfGameIsOver(0));
 // if they are 16 or older and do not have a permit, they are not eligble for a license.
 
 
-var userAge = 13;
-var hasPermit = false;
-
-
-if(userAge < 15){
-    alert("Sorry, you're not eligible for a permit.");
-} else {
-    if(userAge ===15){
-        alert("You can have a permit.");
-    } else if (userAge >= 16 && hasPermit){
-        alert("You can have a license!");
-    } else if (userAge >= 16 && !hasPermit){
-        alert("You need a permit, first.");
-    }
-}
+// var userAge = 13;
+// var hasPermit = false;
+//
+//
+// if(userAge < 15){
+//     alert("Sorry, you're not eligible for a permit.");
+// } else {
+//     if(userAge ===15){
+//         alert("You can have a permit.");
+//     } else if (userAge >= 16 && hasPermit){
+//         alert("You can have a license!");
+//     } else if (userAge >= 16 && !hasPermit){
+//         alert("You need a permit, first.");
+//     }
+// }
 
 
 
@@ -318,8 +318,11 @@ if(userAge < 15){
 // }
 
 //WRITE YOUR TERNARY STATEMENT HERE!
-
-
+// var weather = "rainy";
+// var weatherMessage = (weather === "rainy") ? "It's raining." : "Have a nice day.";
+//
+// console.log(weatherMessage);
+//
 
 // =============== SWITCH STATEMENT ================
 //Together:
@@ -341,20 +344,95 @@ if(userAge < 15){
 
 //TODO: Write a switch statement that evaluates weather as the condition. Check for "rainy", "sunny", "snow", and a default case.
 
+// var weatherCondition = "df";
+//
+// switch (weatherCondition) {
+//     case "rainy":
+//         alert("It's pouring outside!");
+//         break;
+//     case "sunny":
+//         alert("Looks like smooth sailin' today.");
+//         break;
+//     case "snow":
+//         alert("It's snowman weather today :^)");
+//         break
+//     default:
+//         alert("looks like the weather is " +weatherCondition + " today.");
+// }
 
 //TODO: Rewrite the intersection function from earlier as a switch statement.
 
+// var trafficLightColor = "green";
+// switch (trafficLightColor) {
+//     case "red":
+//         alert("STOP!!!");
+//         break;
+//     case "yellow":
+//         alert("Slow down!");
+//         break;
+//     case "green":
+//         alert("You may proceed.");
+//         break;
+//     default:
+//         alert("Proceed with caution.");
+//
+// }
 
+function trafficLightColor(color){
+    switch (trafficLightColor){
+        case "red":
+            return "STOP!!!";
+        case "yellow":
+            return "Slow down!";
+        case "green":
+            return "You may proceed.";
+        default:
+            return "Proceed with caution.";
+    }
+}
 
+console.log(trafficLightColor("red"));
+
+//
+// function trafficLightColor (color) {
+//     if (color === "red") {
+//         return "Come to a full stop.";
+//     } else if (color === "yellow") {
+//         return "Slow down!";
+//     } else if (color === "green"){
+//         return "Go go go!";
+//     } else {
+//         return "Proceed with caution.";
+//     }
+//
+// }
 // ================ REVERSE ENGINEERING =================
 // Visit each of these links, outline the steps required to achieve each of these demonstrations. You can write code or just write the logic steps that would achieve each output
 
 
 // 1) https://mdn.github.io/learning-area/javascript/building-blocks/allowance-updater.html
 
+//if child as done shopping, add $5.
+
+
 
 // 2) https://mdn.github.io/learning-area/javascript/building-blocks/simple-else-if.html
 
+//There is a dropdown box and the user can select the following weather elements from the dropdown:
+
+//If weather is rainy, put "Rain is falling outside; take a rain coat and a brolly, and
+// don't stay out for too long.
+
+//If weather is sunny, "It is nice and sunny outside today.
+// Wear shorts! Go to the beach, or the park, and get an ice cream."
+
+//If weather is snowy, "The snow is coming down — it is freezing!
+// Best to stay in with a cup of hot chocolate, or go build a snowman."
+
+//If weather is overcast, put "It isn't raining, but the sky is grey and gloomy;
+// it could turn any minute, so take a rain coat just in case."
 
 // 3) https://mdn.github.io/learning-area/javascript/building-blocks/simple-ternary.html
 
+//When user selects a dropdown box, they are given two options : white or black. When user clicks white, the webpage
+//stays white. When user selects black, the page switches to a dark layout.
