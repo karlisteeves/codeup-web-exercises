@@ -16,7 +16,7 @@
  *
  * Can you refactor your code to use functions?
  */
-
+//
 // function numGame() {
 //     var userConfirm = confirm("Would you like to enter a number?")
 //     if (userConfirm === false) {
@@ -46,7 +46,7 @@
 //
 //
 // numGame()
-
+//
 
 // var userConfirm = confirm("Would like to enter a number?")
 //
@@ -102,6 +102,10 @@
  * console.logging the function's return value
  */
 
+// function analyzeColor(color){
+//     var colorMessage;
+//     if
+// }
 
 //
 // Don't change the next two lines!
@@ -115,9 +119,9 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message everytime you refresh the page
- */
-
-
+//  */
+//
+//
 // function analyzeColor(colors) {
 //     var colors = (randomColor);
 //     if (colors === "red") {
@@ -147,7 +151,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Refactor your above function to use a switch-case statement
  */
 
-
+//
 // function analyzeColor(colors) {
 //     var colors = randomColor;
 //     switch (colors) {
@@ -184,30 +188,30 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 
 
-function analyzeColor() {
-    var userColor = prompt("Enter a color!");
-    switch (userColor) {
-        case "red":
-            return "That's my favorite color, too!";
-        case "orange":
-            return "I hate that color.";
-        case "yellow":
-            return "Rubber ducks are yellow.";
-        case "green":
-            return "Green like boogies?!";
-        case "blue":
-            return "Blue is the color of the sky!";
-        case "indigo":
-            return "Indigo is kind of like blue.";
-        case "violet":
-            return "Violet is the color of pretty flowers.";
-        default:
-            return "I don't know that color.";
-    }
-
-}
-
-console.log(analyzeColor(colors));
+// function analyzeColor() {
+//     var userColor = prompt("Enter a color!");
+//     switch (userColor) {
+//         case "red":
+//             return "That's my favorite color, too!";
+//         case "orange":
+//             return "I hate that color.";
+//         case "yellow":
+//             return "Rubber ducks are yellow.";
+//         case "green":
+//             return "Green like boogies?!";
+//         case "blue":
+//             return "Blue is the color of the sky!";
+//         case "indigo":
+//             return "Indigo is kind of like blue.";
+//         case "violet":
+//             return "Violet is the color of pretty flowers.";
+//         default:
+//             return "I don't know that color.";
+//     }
+//
+// }
+//
+// console.log(analyzeColor(colors));
 
 /* ########################################################################## */
 
@@ -231,15 +235,48 @@ console.log(analyzeColor(colors));
  * return value.
  */
 
+function calculateTotal(luckyNumber, totalPrice){
+    var discountRate = 0;
+    switch(luckyNumber){
+        case 0:
+            discountRate = 0;
+            break;
+            case 1:
+                discountRate = .1;
+                break;
+        case 2:
+            discountRate = .25;
+            break;
+            case 3:
+                discountRate = .35;
+                break;
+                case 4:
+                    discountRate = .50;
+                    break;
+                    case 5:
+                        discountRate = 1;
+                        break;
+    }
+    return totalPrice = totalPrice - (totalPrice * discountRate);
+
+}
+
+console.log(calculateTotal(4, 100));
+
 
 //a number between 1 - 5 is generated. If user has number 0, they get no discount. If the number is 1, they get 10%,
 // if it is 2, they get 25%, if it is three, they get 35%, if it is 4, they get 50% and if it is five, they get
 //item for free. The function will accept a lucky number and total amount, and return a discounted price.
 
+var luckyNumber = Math.floor(x:Math.random() * 6);
+console.log(luckyNumber);
 
-if (luckyNumber === 0){
-    return (luckyNumber )
-}
+var totalBillPrompt = parseFloat(prompt("What was your total bill?"));
+
+var finalAmount = calculateTotal(luckyNumber, totalBillPrompt);
+
+alert("Your lucky number is: "+luckyNumber+ "Your total bill was: " +totalBillPrompt + " Your isount total is: " +
+finalAmount);
 
 /**
  * TODO:
