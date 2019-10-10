@@ -168,16 +168,16 @@ console.log(checkIfGameIsOver(0));
     
 // SHOULD WE DELETE STUFF EXAMPLE
 //
-// var weShouldDeleteStuff = confirm('Are you sure you want to delete everything?');
-//
+var weShouldDeleteStuff = confirm('Are you sure you want to delete everything?');
+
 // console.log("The value of the confirm is: " + weShouldDeleteStuff);
-//
-// if (weShouldDeleteStuff) {
-//     // delete all the things...
-//     alert("We are deleting everything...");
-// } else {
-//     alert("Operation Canceled!");
-// }
+
+if (weShouldDeleteStuff) {
+    // delete all the things...
+    alert("We are deleting everything...");
+} else {
+    alert("Operation Canceled!");
+}
 
 
 //TODO: Write a confirm asking the user if they are 13 years of age or older. If they are, alert "You may proceed", if they are not, alert "Sorry, you are not able to proceed"
@@ -267,21 +267,21 @@ console.log(checkIfGameIsOver(0));
 // if they are 16 or older and do not have a permit, they are not eligble for a license.
 
 
-// var userAge = 13;
-// var hasPermit = false;
-//
-//
-// if(userAge < 15){
-//     alert("Sorry, you're not eligible for a permit.");
-// } else {
-//     if(userAge ===15){
-//         alert("You can have a permit.");
-//     } else if (userAge >= 16 && hasPermit){
-//         alert("You can have a license!");
-//     } else if (userAge >= 16 && !hasPermit){
-//         alert("You need a permit, first.");
-//     }
-// }
+var userAge = 13;
+var hasPermit = false;
+
+
+if(userAge < 15){
+    alert("Sorry, you're not eligible for a permit.");
+} else {
+    if(userAge ===15){
+        alert("You can have a permit.");
+    } else if (userAge >= 16 && hasPermit){
+        alert("You can have a license!");
+    } else if (userAge >= 16 && !hasPermit){
+        alert("You need a permit, first.");
+    }
+}
 
 
 
@@ -362,21 +362,21 @@ console.log(checkIfGameIsOver(0));
 
 //TODO: Rewrite the intersection function from earlier as a switch statement.
 
-// var trafficLightColor = "green";
-// switch (trafficLightColor) {
-//     case "red":
-//         alert("STOP!!!");
-//         break;
-//     case "yellow":
-//         alert("Slow down!");
-//         break;
-//     case "green":
-//         alert("You may proceed.");
-//         break;
-//     default:
-//         alert("Proceed with caution.");
-//
-// }
+var trafficLightColor = "green";
+switch (trafficLightColor) {
+    case "red":
+        alert("STOP!!!");
+        break;
+    case "yellow":
+        alert("Slow down!");
+        break;
+    case "green":
+        alert("You may proceed.");
+        break;
+    default:
+        alert("Proceed with caution.");
+
+}
 
 function trafficLightColor(color){
     switch (trafficLightColor){
@@ -391,7 +391,7 @@ function trafficLightColor(color){
     }
 }
 
-console.log(trafficLightColor("red"));
+// console.log(trafficLightColor("red"));
 
 //
 // function trafficLightColor (color) {
