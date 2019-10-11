@@ -66,90 +66,356 @@
 
 
 
-
-//Make a function named identity(input) that returns the input exactly as provided.//
-
-    function identity(input){
-        return input;
-    }
-
-console.log(identity("borger"));
-
-
-    //Make a function named addFive(input) that adds five to some input.//
-
-    function addFive(num){
-        return num + 5;
-    }
-
-console.log(addFive(32));
-
-    //Make a function named isMultipleOf(target, n) which checks if target is evenly divisible by n//
-
-    function isMultipleOf(target, n){
-        return (target / n) % 2 === 0;
-    }
-
-console.log(isMultipleOf(12, 2));
-
-    //Make a function named hasLowerCase(string) that returns if a string has any lower cased letter//
-
-    // function hasLowerCase(string) {
-//     if (string === string.toLowerCase()) {
-//         return string;
-//     }
-// }
-
-//the above is how you would get it to return if the string was only lower case.//
-
-function hasLowerCase(str) {
-    if (/[a-z]/.test(str)) {
-        return str;
-    }
-}
-
-console.log(hasLowerCase("HELLLLLo"));
-
-
-//Make a function named isSpace(letter) that returns if a character is a space character//
-
-//     function isSpace(letter){
-//         if (indexOf(letter(" ")) >= 0);
-//         return true;
+//
+// //Make a function named identity(input) that returns the input exactly as provided.//
+//
+//     function identity(input){
+//         return input;
 //     }
 //
-// console.log(isSpace("this has space"));
+// console.log(identity("borger"));
+//
+//
+//     //Make a function named addFive(input) that adds five to some input.//
+//
+//     function addFive(num){
+//         return num + 5;
+//     }
+//
+// console.log(addFive(32));
+//
+//     //Make a function named isMultipleOf(target, n) which checks if target is evenly divisible by n//
+//
+//     function isMultipleOf(target, n){
+//         return (target / n) % 2 === 0;
+//     }
+//
+// console.log(isMultipleOf(12, 2));
+//
+//     //Make a function named hasLowerCase(string) that returns if a string has any lower cased letter//
+//
+//     // function hasLowerCase(string) {
+// //     if (string === string.toLowerCase()) {
+// //         return string;
+// //     }
+// // }
+//
+// //the above is how you would get it to return if the string was only lower case.//
+//
+// function hasLowerCase(str) {
+//     if (/[a-z]/.test(str)) {
+//         return str;
+//     }
+// }
+//
+// console.log(hasLowerCase("HELLLLLo"));
+//
+//
+// //Make a function named isSpace(letter) that returns if a character is a space character//
+//
+// //     function isSpace(letter){
+// //         if (indexOf(letter(" ")) >= 0);
+// //         return true;
+// //     }
+// //
+// // console.log(isSpace("this has space"));
+//
+//     //Make a function named notZero(input) that returns true if the input is not zero//
+//
+//     function notZero(num) {
+//         if (num === 0) {
+//             return false;
+//         } else {
+//             return true;
+//         }
+//     }
+//
+//             console.log(notZero(3));
+//
+//     //Write a function named double(n) that returns a number times two//
+//
+//     function double(n){
+//         return n * 2;
+//     }
+//
+// console.log(double(16));
+//
+//     //Write a function named triple(n) that returns a number times 3//
+//
+//     function triple(n){
+//         return n * 3;
+//     }
+//
+// console.log(triple(3));
+//
+//     //Write a function named quadruple(n) that returns a number times 4//
+//
+//
+//     // write a function name sqaureroot that takes in a number and returns the square root//
+//
+//     function squareRoot(num){
+//         return Math.sqrt(num);
+//     }
+//
+//     //write a function named isMultipleof3 that takes in a number and returns true or false if the number is evenly
+//     //divisible by three
+//
+//     function isMultipleof3(num){
+//         if (num % 3 === 0){
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
+//
+//     // function that take two numbers and returns the product of area of rectangle//
+//
+//     function areaofRectangle (num1, num2){
+//         return (num1 * num2);
+//     }
+//
+//
+//     //write a function named isNegativeEven that takes a number and returns true or false if the value
+//     //is both less than 0 and even
+//
+//     function isNegativeEven (num){
+//         if (num % 2 === 0 && num < 0){
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
+//
+//
+//     // function a concat with two values//
+//
+//     function isConcat (num1, num2){
+//         return "" +num1 +num2;
+//     }
+//
+//     //write a function that returns the string of hi//
+//
+//     function sayHi ( name ){
+//         return "Hi, " + name;
+//     }
+//
+//     function perimeterofaQuad(a, b, c, d){
+//         return = a + b + c + d;
+//     }
+//
+//
+//     //make a variable of prompt response what's my fav color//
+//
+//     var promptResponse = prompt("What's your favorite color?");
+//
+//
+//     //use var in an alert and say "Var, that's my fav color too!"//
+//
+//     var promptResponse =prompt("What's your favorite color?");
+//     alert(promptResponse +" , that's my favorite color too!");
+//
+//     //confirm that you want to leave this page. if true, return message "leave page" if false, stay on page.//
+//     if confirm("Do you want to leave this page?"){
+//         alert ("Leaving page");
+//     } else {
+//         alert ("Stay on page.")
+//     }
 
-    //Make a function named notZero(input) that returns true if the input is not zero//
 
-    function notZero(num) {
-        if (num === 0) {
-            return false;
-        } else {
+
+
+
+
+    //after school practice///
+
+
+    //
+
+
+    function isBoolean(x){
+        return typeof x == "boolean";
+
+    }
+
+console.log(isBoolean(false));
+
+
+
+//make a function called string that takes in a input and returns a boolean if the input is a string or not
+
+
+    function string(x){
+        if (typeof x == "string"){
             return true;
+        } else {
+            return false;
         }
     }
 
-            console.log(notZero(3));
+console.log(string(2));
 
-    //Write a function named double(n) that returns a number times two//
+    //a function called Numeric that takes in a value and returns true if the value is numeric or not. strings with numbers should return true
 
-    function double(n){
-        return n * 2;
+
+        function Numeric(value) {
+            return !isNaN(value) && !isNaN(parseFloat(value));
+        }
+
+console.log(Numeric (20));
+
+        // Easy one! make a function called isEven that takes in one input and if the input is an even number return true
+
+    function isEven(x){
+        return x % 2 === 0;
     }
 
-console.log(double(16));
 
-    //Write a function named triple(n) that returns a number times 3//
+console.log(isEven(2));
 
-    function triple(n){
-        return n * 3;
+
+
+solutions:
+    function isBoolean(input) {
+        return (typeof input === "boolean");
     }
+function isNumeric(input) {
+    if (typeof input === "number")
+        return true;
+    else if (typeof input === "string")
+        return !isNaN(input);
+    else
+        return false;
+}
+function isString(input) {
+    return (typeof input === "string");
+}
+function isArray(input) {
+    return (Array.isArray(input));
+}
+function isNegative(num) {
+    return (num < 0);
+}
+function isPositive(num) {
+    if (typeof num === "number")
+        return (num > 0);
+    else if (typeof num === "string") {
+        if (!isNaN(num))
+            return (+num > 0);
+        else
+            return false;
+    } else
+        return false;
+}
+function increment(input) {
+    if (typeof input === "number")
+        return input + 1;
+    else if (typeof input === "string") {
+        if (!isNaN(input))
+            return (+input + 1);
+        else
+            return false;
+    } else
+        return false;
+}
+function decrement(input) {
+    if (typeof input === "number")
+        return input - 1;
+    else if (typeof input === "string") {
+        if (!isNaN(input))
+            return (+input - 1);
+        else
+            return false;
+    } else
+        return false;
+}
+function square(input) {
+    if (typeof input === "number")
+        return input * input;
+    else if (typeof input === "string") {
+        if (!isNaN(input))
+            return (+input * +input);
+        else
+            return false;
+    } else
+        return false;
+}
+function upperCase(input) {
+    if (typeof input === "string" && (isNaN(input) || input.length === 0))
+        return input.toUpperCase();
+    else
+        return false;
+}
+function isPalindrome(input) {
+    if (typeof input === "string" && (isNaN(input) || input.length === 0)) {
+        input = input.toLowerCase();
+        return (input === input.split("").reverse().join(""));
+    } else
+        return false;
+}
+function getHighestNumber(a, b, c) {
+    if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
+        var highest;
+        a = +a;
+        b = +b;
+        c = +c;
+        if (a > b || a === b)
+            highest = a;
+        else
+            highest = b;
+        if (highest > c || highest === c)
+            return highest;
+        else
+            return c;
+    } else
+        return false;
+}
+function containsVowel(input) {
+    if (typeof input === "string") {
+        input = input.toLowerCase();
+        return ((input.indexOf("a") !== -1 || input.indexOf("e") !== -1 || input.indexOf("i") !== -1 || input.indexOf("o") !== -1 || input.indexOf("u") !== -1))
+    } else
+        return false;
+}
+function add(a, b) {
+    if (typeof a === "number" && typeof b === "number")
+        return (a + b);
+    else if (typeof a === "string" || typeof b === "string") {
+        if (!isNaN(a) && !isNaN(b))
+            return (+a + +b);
+        else
+            return false;
+    } else
+        return false;
+}
+function multiply(a, b) {
+    if (typeof a === "number" && typeof b === "number")
+        return (a * b);
+    else if (typeof a === "string" || typeof b === "string") {
+        if (!isNaN(a) && !isNaN(b))
+            return (a * b);
+        else
+            return false;
+    } else
+        return false;
+}
+function sumOfSquares(a, b) {
+    if (typeof a === "number" && typeof b === "number")
+        return (a * a) + (b * b);
+    else if (typeof a === "string" || typeof b === "string") {
+        if (!isNaN(a) && !isNaN(b))
+            return (a * a) + (b * b);
+        else
+            return false;
+    } else
+        return false;
+}
 
-console.log(triple(3));
 
-    //Write a function named quadruple(n) that returns a number times 4//
 </script>
+
+
+
+
 
 <body>
 
