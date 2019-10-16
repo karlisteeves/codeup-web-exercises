@@ -57,43 +57,27 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-    //
-    // var array = [1, 2, 3, 4, 5];
-    //
-    // array.forEach(function() {
-    //     console.log(array[0]);
-    // });
-    //
-    //
-    // array.forEach(function() {
-    //     console.log(array[1]);
-    // });
-    //
-    // array.forEach(function() {
-    //     console.log(array[2]);
-    // });
-
-
-    // console.log(array[0]);
-    //
-    // console.log(array[1]);
-    //
-    // console.log(array[2]);
-
-
-    // function first(array){
-    //
-    //
-    //     return array[0];
-    // }
-    //
-    // console.log(first);
-})();
-
-
 
 var array = [1, 2, 3, 4, 5];
 
-function second() {
-    console.log(numbers[1]);
+function first(){
+    console.log(array[0]);
 }
+
+
+function second(){
+    console.log(array[1]);
+}
+
+function last(){
+    console.log(array[array.length - 1]);
+}
+
+
+first(array);
+second(array);
+last(array);
+
+})();
+
+
