@@ -48,6 +48,8 @@
      * - second: returns the second item in the array
      * - last: returns the last item in the array
      *
+     *
+
 
      * Example:
      *  > first([1, 2, 3, 4, 5]) // returns 1
@@ -55,4 +57,43 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
+    //
+    // var array = [1, 2, 3, 4, 5];
+    //
+    // array.forEach(function() {
+    //     console.log(array[0]);
+    // });
+    //
+    //
+    // array.forEach(function() {
+    //     console.log(array[1]);
+    // });
+    //
+    // array.forEach(function() {
+    //     console.log(array[2]);
+    // });
+
+
+    // console.log(array[0]);
+    //
+    // console.log(array[1]);
+    //
+    // console.log(array[2]);
+
+
+    // function first(array){
+    //
+    //
+    //     return array[0];
+    // }
+    //
+    // console.log(first);
 })();
+
+
+
+var array = [1, 2, 3, 4, 5];
+
+function second() {
+    console.log(numbers[1]);
+}
