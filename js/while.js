@@ -13,32 +13,27 @@ while(i <=65536) {
 
 
 //cones are hard
-//
-// var allCones = Math.floor(Math.random() * 50) + 50;
-// var conesSold =Math.floor(Math.random() * 5) + 1;
-//
-//
-//
-// do {
-//
-// } while (allCones >= 0);
-//
+
+var allCones = Math.floor(Math.random() * 50) + 50;
+
+console.log(allCones);
+console.log("We currently have " + allCones)
 
 
-//
-// for (var i = 1; i <= 100; i++) {
-//     if (i % 3 === 0) {
-//         console.log( i + " = " + "Fizz");
-//     }else if (i % 5 === 0) {
-//         console.log( i + " = " + "Buzz");
-//     }else {
-//         console.log(i);
-//     }
-//     if (i % 3 === 0 && i % 5 === 0) {
-//         console.log( i + " = " + "FizzBuzz");
-//     }
-// };
-// do {
-//     console.log('while loop iteration #' + i);
-//     i++;
-// } while (i < 10);
+
+
+function sellingCones() {
+    do {
+        var conesSold = Math.floor(Math.random() * 5) + 1;
+        console.log("We currently have " + allCones + " You want " + conesSold);
+        allCones -= conesSold;
+
+
+
+        if (conesSold >= allCones) {
+            console.log("I don't have enough cones.")
+        }
+    } while (allCones > 0);
+    console.log("Yay! I ran out of cones.");
+}
+
