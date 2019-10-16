@@ -13,16 +13,16 @@ while(i <=65536) {
 
 
 //cones are hard
-
-var allCones = Math.floor(Math.random() * 50) + 50;
-var conesSold =Math.floor(Math.random() * 5) + 1;
-
-
-
-do {
-
-} while (allCones >= 0);
-
+//
+// var allCones = Math.floor(Math.random() * 50) + 50;
+// var conesSold =Math.floor(Math.random() * 5) + 1;
+//
+//
+//
+// do {
+//
+// } while (allCones >= 0);
+//
 
 
 //
