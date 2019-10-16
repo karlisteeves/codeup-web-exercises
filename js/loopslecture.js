@@ -9,12 +9,12 @@
 
 var i = 10;
 //
-// while (i > 0){
-//     console.log(i);
-//     i--;
-// }
-//
-// console.log("loop is done");
+while (i > 0){
+    console.log(i);
+    i--;
+}
+
+console.log("loop is done");
 
 
 
@@ -23,10 +23,10 @@ var i = 10;
 
 
 
-// while (i <= 90){
-//    console.log(i+=10);
-// }
-//
+while (i <= 90){
+   console.log(i+=10);
+}
+
 //
 
 
