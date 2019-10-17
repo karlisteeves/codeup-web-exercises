@@ -94,21 +94,21 @@ console.log(isMultipleOf(12, 2));
 
     //Make a function named hasLowerCase(string) that returns if a string has any lower cased letter//
 
-    // function hasLowerCase(string) {
-//     if (string === string.toLowerCase()) {
-//         return string;
-//     }
+    function hasLowerCase(string) {
+        if (string === string.toLowerCase()) {
+            return string;
+        }
 // }
 
 //the above is how you would get it to return if the string was only lower case.//
 
-function hasLowerCase(str) {
-    if (/[a-z]/.test(str)) {
-        return str;
-    }
-}
+        function hasLowerCase(str) {
+            if (/[a-z]/.test(str)) {
+                return str;
+            }
+        }
 
-console.log(hasLowerCase("HELLLLLo"));
+        console.log(hasLowerCase("HELLLLLo"));
 
 
 //Make a function named isSpace(letter) that returns if a character is a space character//
@@ -120,38 +120,116 @@ console.log(hasLowerCase("HELLLLLo"));
 //
 // console.log(isSpace("this has space"));
 
-    //Make a function named notZero(input) that returns true if the input is not zero//
 
-    function notZero(num) {
-        if (num === 0) {
-            return false;
-        } else {
-            return true;
+///look up how to do a loop in the function that looks through a string maybe?
+
+
+///what can we look at to capitalize the first letter of a word.
+
+        function isNumeric(num) {
+            return !isNan(parseFloat(num));
+        }
+
+
+        function increment(num) {
+            if (isNumeric(num)) {
+                return parseFloat(num) + 1;
+            } else {
+                return false;
+            }
         }
     }
 
-            console.log(notZero(3));
 
-    //Write a function named double(n) that returns a number times two//
 
-    function double(n){
-        return n * 2;
+    function decrement(num){
+        if (isNumeric(num)){
+            return parseFloat(num) -1;
+        }else{
+            return false;
+        }
     }
 
-console.log(double(16));
-
-    //Write a function named triple(n) that returns a number times 3//
-
-    function triple(n){
-        return n * 3;
+    function square(num){
+        if (isNumeric(num)){
+            return num * num;
+        }else{
+            return false;
+        }
     }
 
-console.log(triple(3));
+function upperCase(str){
+        if(typeof str === "string" && !isNumeric(str)){
+            return str.toUpperCase()
+        }else{
+            return false;
+        }
+}
 
-    //Write a function named quadruple(n) that returns a number times 4//
+function isPalindrome(str){
+    if(typeof str === "string" && !isNumeric(str)){
+        str = upperCase(str);
+        var checker = str.split('').reverse().join('');
+        return str === checker;
+    }else{
+        return false;
+    }
+}
+
+
+function getHighestNumber(num1, num2, num3){
+if (isNumeric(num1) && isNumeric(num2) && isNumeric(num3)){
+    if (num1 > num2 && num1 > num3){
+        return num1;
+    }else if (num2 >num1 && num2 >num3){
+        return num2;
+    }else if (num3>num1 && num2>num2){
+        return num3;
+    }
+} else {
+    return false;
+}
+}
+
+function containsVowel(str){
+        if (typeof str === "string" && !isNumeric(str)){
+            str = str.toLowerCase();
+            for(var i = 0; i < str.length; i++){
+                if (str[i] === "a" ||str[i] === "e" || str[i] === "i" || str[i] === "o" || str[i] === "u" ||){
+                    return true;
+                }
+            }
+            return false;
+        }else{
+            return false;
+        }
+}
+
+function add(num1, num2){
+        if(isNumeric(num1) && isNumeric(num2)){
+            return parseFloat(num1) + parseFloat(num2);
+        }else{
+            return false;
+        }
+}
+
+function multiply(num1, num2){
+    if(isNumeric(num1) && isNumeric(num2)){
+        return parseFloat(num1) * parseFloat(num2);
+    }else{
+        return false;
+    }
+}
+
+function sumOfSquares(num1, num2){
+        return add(square(num1), square(num2));
+}
+
 </script>
 
 <body>
 
 </body>
 </html>
+
+
