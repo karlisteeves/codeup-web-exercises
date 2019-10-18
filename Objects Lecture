@@ -4,12 +4,13 @@ console.log("Welcome to Intro to Objects!");
 /*********************************************
 *              INTRO TO OBJECTS
 ******************************************** */
-
 /**
  * Objects are an unordered collection of related data in the form of
  * key:value pairs
  */
 
+
+}
 
 /*********************************************
  *              CREATING NEW OBJECTS
