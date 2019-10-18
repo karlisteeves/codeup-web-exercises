@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    /*background-image: linear-gradient(to bottom, #accbee 0%, #e7f0fd 100%);*/
+}
+
+
+
+.iconborder {
+    margin: 5%;
+    justify-content: center;
+
+}
+
+.icon{
+    display:flex;
+    padding:70px;
+    margin: none;
+    color: ghostwhite;
+    border: solid black;
+    border-radius: 50%;
+}
