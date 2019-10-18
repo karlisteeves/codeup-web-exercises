@@ -1,4 +1,4 @@
-(function() {
+(function(){
 
     "use strict";
 
@@ -53,34 +53,84 @@
      */
 
     var shoppers = [
-        {name: 'Cameron', amount: 180},
+        {
+            name: 'Cameron',
+            amount: 180
+        },
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
 
     console.log("Your total amount is: ");
     shoppers.forEach(function(shopper){
+        if (shopper.amount > 200){
+            console.log("Your discount is " + (shopper.amount * .12));
+        } else {
+            console.log("You get no discount.")
+        }
+    });
 
 
 
-    console.log("Here are all the features of all the cars:");
-    cars.forEach(function(car) {
-        car.features.forEach(function(feature) {
-            console.log(feature);
-        });
+
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
      * property. The author property should be an object with properties
      * `firstName` and `lastName`. Be creative and add at least 5 books to the
      * array
-     *
+
      * Example:
      * > console.log(books[0].title) // "The Salmon of Doubt"
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
+
+    var books = [
+
+        {
+            title: "the Salmon of Doubt",
+            author: {
+                firstName: "Douglas",
+                lastName: "Adams"
+            }
+        },
+        {
+            title: "Fight Club",
+            author: {
+                firstName: "Chuck",
+                lastName: "Palahnuik"
+            }
+
+
+        },
+        {
+            title: "Frakenstein",
+            author: {
+                firstName: "Mary",
+                lastName: "Shelley"
+            }
+        },
+
+        {
+            title: "the Last Unicorn",
+            author: {
+                firstName: "Peter",
+                lastName: "Beagle"
+            }
+        },
+        {
+            title: "Catcher in the Rye",
+            author: {
+                firstName: "JD",
+                lastName: "Salinger"
+            }
+        }
+
+    ];
+
+    console.log(books[2].title);
     /**
      * TODO:
      * Loop through the books array and output the following information about
