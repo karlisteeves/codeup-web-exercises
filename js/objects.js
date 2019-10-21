@@ -64,9 +64,9 @@
     console.log("Your total amount is: ");
     shoppers.forEach(function(shopper){
         if (shopper.amount > 200){
-            console.log("Your discount is " + (shopper.amount * .12));
+            console.log(shopper.name + ", your discount is $" + (shopper.amount * .12));
         } else {
-            console.log("You get no discount.")
+            console.log(shopper.name +", you get no discount.")
         }
     });
 
@@ -130,7 +130,9 @@
 
     ];
 
-    console.log(books[2].title);
+    console.log(books[0].title);
+
+
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -155,6 +157,21 @@
      *      ---
      *      ...
      */
+    // books.logbookInfo = function (book, i) {
+    //     console.log("The book name " + this.indexOf(books)+ ". The book's authors are: " + this.author);
+    // };
+    //
+    // books.logbookInfo();
+
+
+    books.forEach(function (book, i) {
+        var output= "";
+        output += "Book # " + (i +1) + "/n";
+        output += "Title: " +book.title + "/n";
+        output += "Author: " +book.author.firstName+ " " + book.author.lastName ;
+        output += "---";
+        console.log(output);
+    });
 
     /**
      * Bonus:
@@ -166,5 +183,16 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook(title, first, last){
+        var book ={};
+        book.title= title;
+        book.author ={
+            firstName: first,
+            lastName: last
+        };
+        return book;
+    }
+    books.push(createBook("Cat's Cradle", first: "Kurt", last: "V"));
 
 })();
