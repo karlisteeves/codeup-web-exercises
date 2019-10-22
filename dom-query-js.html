@@ -27,11 +27,13 @@
 
 <button id="btn1">Click Me!</button>
 <button id="btn2">Remove Event Listener</button>
+<button id="btn3">Click me! </button>
+<button id="btn4">Click me for a new color!</button>
 <script>
     'use strict';
 
     var listener = function (event) {
-        alert('You clicked the button!');
+
     }
 
 
@@ -40,8 +42,8 @@
     var btn1 = document.getElementById('btn1');
     btn1.addEventListener('click', function(){
         alert('button one clicked!');
-        var mainHeader = document.getElementById("main-header");
-        mainHeader.innerHTML = "Javascript is Cool";
+        // var mainHeader = document.getElementById("main-header");
+        // mainHeader.innerHTML = "Javascript is Cool";
 
 
     });
@@ -50,7 +52,7 @@
 
     var remover = function (event) {
         // remove event listener from btn1
-        btn1.removeEventListener('click', listener, false);
+        btn1.removeEventListener('click', listener);
         console.log('Event listener removed.');
     }
 
@@ -58,17 +60,22 @@
     var btn2 = document.getElementById('btn2');
     btn2.addEventListener('click', remover, false);
 
+    var btn3 = document.getElementById("btn3");
+    btn3.addEventListener("click", function(){
+        var mainHeader = document.getElementById("main-header");
+        mainHeader.innerHTML = "Javascript is Cool";
+    })
+
+    var btn4 = document.getElementById("btn4");
+    btn4.add('click', function(){
+        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+        subParagraphs.style.backgroundColor = "red";
+    })
 </script>
 
 
 
-<button id="btn3">Click me! </button>
-<script>
-    "use strict";
-    var listener = function (event) {
 
-    }
-</script>
 
 
 <script>
