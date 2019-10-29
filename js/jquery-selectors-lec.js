@@ -30,13 +30,13 @@ $(document).ready(function() {
 
 	// TODO TOGETHER: Change the background color of the id 'book-welcome'
 
-	$('#book-welcome').css('background-color', 'green');
+	// $('#book-welcome').css('background-color', 'green');
 	// TODO: Select the contents/html of the id 'book-bundle-one' and set equal to the variable 'bookBundle'. Console.log the contents
-	var bookBundle = $("#book-bundle-one").html();
-	console.log(bookBundle);
+	// var bookBundle = $("#book-bundle-one").html();
+	// console.log(bookBundle);
 
 	// TODO: Change one css property of the id 'container'
-	$("#container").css("background-color", "pink")
+	// $("#container").css("background-color", "pink")
 
 
 	/**********************************************
@@ -45,7 +45,7 @@ $(document).ready(function() {
 	// $('.some-class');
 
 	// TODO TOGETHER: Change the font size of all the .main-headings
-	$(".main-headings").css('font-size', '60px');
+	// $(".main-headings").css('font-size', '60px');
 
 	// TODO: Explore the following JS Bin example:
 	//  https://jsbin.com/topupe/1/edit?js,output
@@ -61,13 +61,13 @@ $(document).ready(function() {
 	//	$('tag_name')
 
 	// TODO TOGETHER: Change the background color of all paragraph tags
-	$("p").css("background-color", "orange")
+	// $("p").css("background-color", "orange")
 	// TODO: Explore the following JS Bin example:
 	//  https://jsbin.com/gayir/1/edit?js,output
 
 
 	// TODO BONUS: Add additional elements to the page, and practice changing the css or viewing the contents
-$("ul").css("background-color", "brown")
+// $("ul").css("background-color", "brown")
 
 	/**********************************************
 	 * 			** MULTIPLE Selector **
@@ -77,15 +77,15 @@ $("ul").css("background-color", "brown")
 
 	// TODO TOGETHER: Change the background color of id 'mystery-genre' and 'book-bundle-three' to red
 
-	$("#mystery-genre, #book-bundle-three").css("background-color", "blue");
+	// $("#mystery-genre, #book-bundle-three").css("background-color", "blue");
 
 	// TODO: Explore the following JS Bin example:
 	//  https://jsbin.com/qejeli/1/edit?output
 
 
 	// TODO BONUS: Add additional elements to the page with ids and classes, and practice changing the css or viewing the contents
-
-	$("h4, li").css("color", "white");
+	//
+	// $("h4, li").css("color", "white");
 	/**********************************************
 	 * 			** THE ALL Selector **
 	 *********************************************/
@@ -94,10 +94,22 @@ $("ul").css("background-color", "brown")
 
 	// TODO TOGETHER: Create a border around all elements
 
-	$("*").css("border", "1px solid red");
+	// $("*").css("border", "1px solid red");
 
 	// TODO: Explore the following JS Bin example:
 	//  https://jsbin.com/fivucu/1/edit?js,output
+
+//the exercises for the curriculum //
+
+
+
+$("img").css("border", "3px solid black");
+$("ul").css("list-style", "none");
+$(".heading-for-list").css("border", "1px solid red");
+$("li").css("font-size", "20px");
+var contents= $("h1").html();
+alert(contents);
+$("h1, li, p").css("background-color", "pink");
 
 
 });
