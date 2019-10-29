@@ -297,11 +297,93 @@
 
 
 
-            function passFive(num){
-                if (num === 'five'){
-                    return 5;
-                }
+            // function passFive(num){
+            //     if (num === 'five'){
+            //         return 5;
+            //     }
+            // }
+
+// band.shred = function() {
+//     console.log('RAAAAAAAAAA!!!!');
+
+
+//return the shipping cart with most oranges
+var shoppingCarts = [
+    {
+        apples: 8,
+        bananas: 2,
+        oranges: 4,
+        grapes: 24
+    }, {
+        apples: 3,
+        bananas: 6,
+        oranges: 12,
+        grapes: 12
+    } , {
+        apples: 0,
+        bananas: 12,
+        oranges: 0,
+        grapes: 0
+    } , {
+        apples: 4,
+        bananas: 0,
+        oranges: 8,
+        grapes: 10
+    }
+];
+
+
+
+
+function mostOranges(carts){
+    var winner = carts[3];
+    carts.forEach(function(cart){
+        if (carts.oranges > winner.oranges){
+            winner = cart;
+        }
+    });
+    return winner;
+}
+
+console.log(mostOranges(shoppingCarts));
+
+    var students = [
+    {
+        name: "Mary",
+        grade: 10,
+        gpa: 3.7,
+        isRegistered: true
+    },
+    {
+        name: "Tim",
+        grade: 12,
+        gpa: 3.2,
+        isRegistered: false
+    },
+    {
+        name: "Ellie",
+        grade: 9,
+        gpa: 4.0,
+        isRegistered: false
+    },
+    {
+        name: "Alex",
+        grade: 10,
+        gpa: 3.9,
+        isRegistered: true
+    }
+]
+
+
+    function studentRegistration(studentarr){
+        var bucket = [];
+        studentarr.forEach(function(student){
+            if (!student.isRegistered) {
+                bucket.push(student);
             }
+        });
+        return bucket;
+    }
 </script>
 
 
