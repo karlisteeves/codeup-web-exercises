@@ -103,13 +103,38 @@ $(document).ready(function() {
 
 
 
-$("img").css("border", "3px solid black");
-$("ul").css("list-style", "none");
-$(".heading-for-list").css("border", "1px solid red");
-$("li").css("font-size", "20px");
-var contents= $("h1").html();
-alert(contents);
-$("h1, li, p").css("background-color", "pink");
+// $("img").css("border", "3px solid black");
+// $("ul").css("list-style", "none");
+// $(".heading-for-list").css("border", "1px solid red");
+// $("li").css("font-size", "20px");
+// var contents= $("h1").html();
+// alert(contents);
+// $("h1, li, p").css("background-color", "pink");
+//
+
+	// $('#main-header').click(function() {
+	// 		$("#main-header").css('background-color', '#FF0');
+	// 	// },
+	// 	// function() {
+	// 	// 	$(this).css('background-color', '#FFF');
+	// 	// }
+	// );
 
 
+
+$("h1").click(function(){
+	$("h1").css("color", "red");
+});
+
+	$('.cat-bio').dblclick(function(e) {
+		$(".cat-bio").css("font-size","20px");
+	});
+	$('li').hover(
+		function() {
+			$(this).css('background-color', 'red');
+		},
+		function() {
+			$(this).css('background-color', '#FFF');
+		}
+	);
 });
