@@ -34,9 +34,9 @@
 
 // Javascript version: This will wait until all images are loaded on page
 
-// window.onload = function() {
-//     alert( 'The page has finished loading!' );
-// }
+window.onload = function() {
+    alert( 'The page has finished loading!' );
+}
 
 // jQuery version: This will fire before the images are loaded
 // We use jQuery to select the document
