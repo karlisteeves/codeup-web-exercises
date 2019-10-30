@@ -28,7 +28,7 @@ var global = {
                 }
                 if (count === 10){
                     // Success!
-                    $('.code').css({'color': 'white', 'background': 'darkred'});
+                    $('#code').css({'color': 'white', 'background': 'darkred'});
                     alert('You now have 30 lives!');
                     reset();
                 }
@@ -68,15 +68,8 @@ var global1 = {
                 }
                 if (count === 10){
                     // Success!
-                    $('.code2').css({'color': 'green'});
-                    $('.code2').css("font-size", "50px");
-                    $('.p1').css('background-image', 'img/drewcarry.gif');
-                    setTimeout(function () {
-                        $('.code2').css({'color': 'black'});
-                    }, 3000);
-                    setTimeout(function () {
-                        $('.p1').css({'background-image': 'none'});
-                    }, 3000);
+                    $('#code2').css({'color': 'green'});
+                    $('#code2').css("font-size", "50px");
                     alert("We've won the motherlode!!");
                     reset();
                 }
@@ -87,7 +80,7 @@ var global1 = {
     }
 };
 global1.sims();
-//----------------mortal combat code --------------------
+//----------------doom code --------------------
 var global2 = {
     doom: function() {
         var doomkeys = [73,68,68,81,68],
@@ -116,11 +109,12 @@ var global2 = {
                 }
                 if (count === 5){
                     // Success!
-                    $('.code3').css({'color': 'white', 'text-shadow': '1px 1px 2px black, 0 0 35px yellow, 0 0 10px gold' });
+                    $('#code3').css({'color': 'white', 'text-shadow': '1px 1px 2px black, 0 0 35px yellow, 0 0 10px gold' });
                     setTimeout(function () {
-                        $('.code3').css({'color': 'black', 'text-shadow': '1px 1px 2px white, 0 0 35px white, 0 0 10px white'});
+                        $('#code3').css({'color': 'black', 'text-shadow': '1px 1px 2px white, 0 0 35px white, 0 0 10px white'});
                     }, 4000);
                     alert('God mode enabled!');
+                    $("#doomgif").css({"display":"inline-block", "margin-left": "100px","transition": "10s"});
                     reset();
                 }
             } else {
@@ -162,10 +156,11 @@ var global3 = {
                 }
                 if (count === 6){
                     // Success!
-                    $('.code4').css("color", "lavender");
+                    $('#code4').css("color", "lavender");
                     setTimeout(function () {
-                        $('.code4').css({"color": "pink"});
+                        $('#code4').css({"color": "pink"});
                     }, 4000);
+                    $("#zeldagif").css("display", "inline");
                     alert("The song I just taught you has some mysterious power..." );
                     reset();
                 }
