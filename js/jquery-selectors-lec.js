@@ -123,12 +123,15 @@ $(document).ready(function() {
 
 
 $("h1").click(function(){
-	$("h1").css("color", "red");
+	$(this).css("color", "red");
 });
 
+
 	$('.cat-bio').dblclick(function(e) {
-		$(".cat-bio").css("font-size","20px");
+		$(this).css("font-size","20px");
 	});
+
+
 	$('li').hover(
 		function() {
 			$(this).css('background-color', 'red');

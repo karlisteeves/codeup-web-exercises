@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body style="display: flex; justify-content: center">
+<h1>Konami Code</h1>
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+    var arr = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a", "Enter"];
+    var position = 0;
+    var divList = [];
+    var activeList = [];
+    var width = 75;
+    $(document).keyup(function (event) {
+        if (event.key === arr[position])
+            position++;
+        else
+            position = 0;
+        if (position === arr.length) {
+            $('h1').html('');
+            $('body').css('background-image', 'url("https://i.imgur.com/R390EId.jpg")');
+            position = 0;
+            $('body').css('background', 'black');
+            for (var i = 0; i < width; i++) {
+                activeList[i] = Math.floor(Math.random() * 10) > 8;
+            }
+            for (var i = 0; i < width; i++) {
+                divList.push(document.createElement("div"));
+                if (activeList[i]) {
+                    divList[i].innerHTML += getRandomLetter() + "<br>";
+                }
+                divList[i].style.width = "20px";
+                divList[i].style.height = "20px";
+                divList[i].style.color = "limegreen";
+                document.body.appendChild(divList[i]);
+            }
+            setInterval(update, 100);
+        }
+    });
+    function getRandomLetter() {
+        var letters = "abcdefghijklmnopqrstuvwxyz";
+        return letters.charAt(Math.floor(Math.random() * 26));
+    }
+    function update() {
+        for (var i = 0; i < width; i++) {
+            //If active, add a new random letter and redetermine if still active
+            if (activeList[i]) {
+                activeList[i] = Math.floor(Math.random() * 10) > 2;
+                divList[i].innerHTML = getRandomLetter() + "<br>" + divList[i].innerHTML;
+            }
+            //else add a blank space and determine if should be active
+            else {
+                activeList[i] = Math.floor(Math.random() * 10) > 8;
+                divList[i].innerHTML = "" + "<br>" + divList[i].innerHTML;
+            }
+            //If too long, trim
+            if (divList[i].innerHTML.length > 200) {
+                if (divList[i].innerHTML.charAt(divList[i].innerHTML.length - 1) === ">")
+                    divList[i].innerHTML = divList[i].innerHTML.slice(0, -4);
+                else
+                    divList[i].innerHTML = divList[i].innerHTML.slice(0, -2);
+            }
+        }
+    }
+</script>
+</body>
+</html>
