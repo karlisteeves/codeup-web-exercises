@@ -1,4 +1,6 @@
 "use strict";
+var newaudio= new Audio("img/zeldasong.mp3");
+var roswellaudtio = new Audio ("img/roswell.mp3");
 
 var global = {
     konami: function() {
@@ -39,10 +41,10 @@ var global = {
     }
 };
 global.konami();
-//konami code done--------------------------------------------
+//sims code--------------------------------------------
 var global1 = {
     sims: function() {
-        var simskeys = [77, 79, 84, 72, 69, 82, 76, 79, 68, 69],
+        var simskeys = [74, 85, 78, 69, 66, 85, 71],
             started = false,
             count = 0;
         $(document).keydown(function(a){
@@ -54,7 +56,7 @@ var global1 = {
             var key = a.keyCode; //lets you know keys are being pressed
             // Begin watching if first key in sequence was pressed.
             if(!started){
-                if(key === 77){
+                if(key === 74){
                     started = true;
                 }
             }
@@ -66,11 +68,12 @@ var global1 = {
                     // Incorrect key, restart.
                     reset();
                 }
-                if (count === 10){
+                if (count === 7){
                     // Success!
-                    $('#code2').css({'color': 'green'});
-                    $('#code2').css("font-size", "50px");
-                    alert("We've won the motherlode!!");
+                    // $('#code2').css({'color': 'green'});
+                    // $('#code2').css("font-size", "50px");
+                    roswellaudtio.play();
+                    $("#junegif").css({"display": "inline", "margin-left": "550px" ,"transition": "5s"});
                     reset();
                 }
             } else {
@@ -109,7 +112,7 @@ var global2 = {
                 }
                 if (count === 5){
                     // Success!
-                    $('#code3').css({'color': 'white', 'text-shadow': '1px 1px 2px black, 0 0 35px yellow, 0 0 10px gold' });
+                    $('#code3').css({'color': 'white', "font-size": "50px", 'text-shadow': '1px 1px 2px black, 0 0 35px yellow, 0 0 10px gold' });
                     setTimeout(function () {
                         $('#code3').css({'color': 'black', 'text-shadow': '1px 1px 2px white, 0 0 35px white, 0 0 10px white'});
                     }, 4000);
@@ -162,6 +165,8 @@ var global3 = {
                     }, 4000);
                     $("#zeldagif").css("display", "inline");
                     alert("The song I just taught you has some mysterious power..." );
+                    newaudio.play(); // try switching this to above the alert and see if it plays then. maybe put a transition on too
+
                     reset();
                 }
             } else {
