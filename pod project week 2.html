@@ -1,0 +1,260 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Pod HTML practice</title>-->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <!--<style>-->
+        <!--.jumbotron {-->
+            <!--height: 20%;-->
+        <!--background-image: url("img/dnd.jpg");-->
+        <!--background-size: cover;-->
+    <!--}-->
+
+    <!--body {-->
+        <!--background-color: #333333;-->
+    <!--}-->
+    <!--</style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="jumbotron">-->
+    <!--<h1 class="display-4">Hello, world!</h1>-->
+    <!--<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>-->
+    <!--<hr class="my-4">-->
+    <!--<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
+    <!--<p class="lead">-->
+        <!--<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>-->
+    <!--</p>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Generic Business</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Lato', sans-serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container {
+        background: mediumpurple;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        -webkit-box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.75);
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-link {
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        padding: 1em;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .nav-link:hover, .nav-link-home {
+        color: #000000;
+        background: #ffffff;
+    }
+
+    header {
+        background: lavenderblush;
+        text-align: center;
+        color: white;
+        padding: 4em;
+    }
+
+    .get-started-btn {
+        padding: .5em 1em;
+        background: rebeccapurple;
+        color: white;
+        text-decoration: none;
+        margin: 5em auto;
+    }
+
+    .get-started-btn:hover {
+        background: #F1F1F1;
+        color: black;
+    }
+
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5em 1em;
+    }
+
+    .section-2 {
+        background: #F1F1F1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5em;
+    }
+
+    .article {
+        width: 60%;
+    }
+
+    .article-icon {
+        color: #E25244;
+        font-size: 100pt;
+    }
+
+    .quote-of-the-day {
+        background: #666666;
+        text-align: center;
+        color: #ffffff;
+        padding: 5em;
+    }
+
+    footer {
+        text-align: center;
+        color: #666666;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 5em;
+    }
+
+    footer a {
+        color: #666666;
+    }
+
+    .social-media-links > a {
+        font-size: 15pt;
+        color: #666666;
+    }
+
+    .social-media-links > a:hover {
+        color: darkgrey;
+    }
+
+    h1, h2, h3 {
+        font-family: "Montserrat", sans-serif;
+        padding: 1em;
+
+    }
+
+    #main-header {
+        text-shadow: 2px 2px black;
+    }
+
+    p {
+        padding: 1em;
+    }
+
+    @media screen and (max-width: 600px) {
+        .section-1 {
+            flex-direction: column;
+            padding: 5em .5em;
+        }
+
+        .section-2 {
+            flex-direction: column;
+            padding: 5em .5em;
+        }
+
+        .article {
+            width: 100%;
+        }
+    }</style>
+</head>
+<body>
+<nav class="nav-container">
+    <ul class="nav-list">
+        <li><a class="nav-link nav-link-home" href="">Home</a></li>
+        <li><a class="nav-link" href="">Link 1</a></li>
+        <li><a class="nav-link" href="">Link 2</a></li>
+        <li><a class="nav-link" href="">Link 3</a></li>
+        <li><a class="nav-link" href="">Link 4</a></li>
+    </ul>
+</nav>
+<header>
+    <h1 id="main-header">POMMY IPSUM</h1>
+
+    <div>
+        <a class="get-started-btn" href="">Get started</a>
+    </div>
+</header>
+<main>
+    <section class="section-1">
+        <div class="article">
+            <h2>Lorem Ipsum</h2>
+            <p>
+
+                    Pommy ipsum air one's dirty linen yorkshire mixture done up like a kipper pigeons in Trafalgar Square,
+                    Prince Charles a tad a bit miffed rather, Northeners scatterbrained guinness pennyboy. Terribly double dutch yorkshire pudding you mean it ain't me noggin', fried toast muck about. Lass shepherd's pie ear hole ridicule marmite knee high to a grasshopper i'll be a monkey's uncle ey up duck nicked bog off farewell what a doddle, scrote 221B Baker Street posh nosh gobsmacked sling one's hook alright duck atrocious chips. Yorkshire mixture for sooth well chuffed complete mare a week on Sunday working class one would
+                    be honoured to, at the boozer lug hole bog off teacakes Prince Charles.
+
+            </p>
+            <p>
+                Flabbergasted a reet bobbydazzler stupendous and we all like figgy pudding every
+                fortnight black pudding, ponce bit of a Jack the lad conkers warts and all make a brew,
+                smeg head stew and dumps air one's dirty linen taking the mick. Toad in the whole on his bill
+                stew and dumps and thus jolly hockey sticks, ear hole gobsmacked fork out gob up at the crack of dawn,
+                bull dog conkers manky. Knows bugger all about nowt numpty because there was nothing on the gogglebox
+                trouble and strife challenge you to a duel how's your father smeg, punter hedgehog fake tan proper Geordie.
+                On the beat posh nosh nose rag know your onions squirrel
+                bargain Betty, not some sort of dosshouse flog leisurely.
+            </p>
+        </div>
+        <i class="fas fa-anchor article-icon"></i>
+    </section>
+    <section class="section-2">
+        <i class="fas fa-coffee article-icon"></i>
+        <article class="article">
+            <h2>Lorem Ipsum</h2>
+            <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa eligendi exercitationem nulla quas, saepe
+                    voluptatibus? Beatae commodi debitis distinctio error magni minima natus nihil, quaerat quod sequi sit voluptate.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam nisi quae! A asperiores atque autem culpa
+                deleniti
+                dignissimos doloremque esse, facilis modi nostrum numquam quae quisquam sint temporibus ullam vitae voluptates! A, accusamus
+                autem
+                culpa ducimus eum eveniet inventore molestiae quae repellat sequi. Error facere incidunt tempora voluptate voluptates.
+            </p>
+        </article>
+    </section>
+    <section class="quote-of-the-day">
+        <h3>It's only a flesh wound.</h3>
+    </section>
+</main>
+<footer>
+    <div class="social-media-links">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-snapchat"></i></a>
+        <a href=""><i class="fab fa-pinterest-p"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+<!--</footer>-->
+</body>
+</html>
