@@ -5,6 +5,9 @@
     <title>National Parks FAQ</title>
     <style>
 
+        #national-parks, #state-parks-texas {
+            display: none;
+        }
         .invisible {
             visibility: hidden;
         }
@@ -12,12 +15,27 @@
         #highlight {
             color: yellow;
         }
+
+        .parks{
+            display: none;
+        }
+
+        h2 {
+            display: none;
+        }
     </style>
 
 </head>
 <body>
 
 <!-- viewable text -->
+
+<div>
+    <h1>Would you like to sign up for our newsletter?</h1>
+    <span>x</span>
+</div>
+
+<h2>Please register for our site. </h2>
 
 <h1>Frequently Asked Questions</h1>
 <dl>
@@ -75,8 +93,8 @@
 <script>
 
 "use strict";
-
-
+//
+//
 $(document).ready(function(){
 
     $("#highlight-important").click(function(){
@@ -96,7 +114,21 @@ $(document).ready(function(){
         $(this).next().children().css('font-weight', 'bold');
     });
 
+    $('span').click(function() {
+        $('div').hide();
+    });
 
+
+    $('h3').click(function() {
+        $('.parks').show();
+    });
+
+
+    $('h3').click(function() {
+        $('.parks').fadeToggle(2500);
+    });
+
+        $('h2').fadeToggle(80000);
 });
 
 
