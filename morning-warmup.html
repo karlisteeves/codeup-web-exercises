@@ -456,10 +456,14 @@ function numberToString(num){
             return "neuf";
         case 10:
             return "dix";
+        default:
+            return false;
     }
 }
 
-console.log(numberToString(5))
+var randomNum= Math.floor(Math.random() * 10)+ 1;
+
+console.log(numberToString(randomNum));
 </script>
 
 
