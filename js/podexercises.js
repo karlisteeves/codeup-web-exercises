@@ -1,5 +1,7 @@
 "use strict";
-
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})
 //11. Write a JavaScript program to compute the greatest common divisor (GCD) of two positive integers.
 //from W3 Resources
 
@@ -35,5 +37,13 @@ function changeEnough(change, amountDue) {
 }
 
 console.log(changeEnough([0, 0, 20, 5], 0.75));
+
+
+
+//Week THREE pod group//
+
+//Use a bootstrap modal for the message that fades in after 8 seconds. You may find that you can use bootstrap's modal methods to achieve the fading effect.
+
+$(".alert").fadeIn(5000);
 
 
