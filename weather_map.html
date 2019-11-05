@@ -33,10 +33,29 @@
         console.log(todayTempLow);
         console.log(todayTempHi);
     });
+//Tomorrow's weather forecast//
 
+   // darkSky.done(function(data){
+   //     var tomorrowTempHi = data.daily.data[1].temperatureHigh;
+   //     var tomorrowTempLow = data.daily.data[1].temperatureLow;
+   //     console.log(tomorrowTempLow);
+   //     console.log(tomorrowTempHi);
+   // });
 
+//Next day weather forecast//
+//
+//    darkSky.done(function(data){
+//        var nextTempHi = data.daily.data[2].temperatureHigh;
+//        var nextTempLow = data.daily.data[2].temperatureLow;
+//        console.log(nextTempLow);
+//        console.log(nextTempHi);
+//    });
 
+    
+   //today's date//
 
+   var dateObject = new Date(1551736889 * 1000);
+   console.log(dateObject.toString());
 
 </script>
 </body>
