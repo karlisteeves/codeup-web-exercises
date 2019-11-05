@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     "use strict";
     console.log("Intro to AJAX!");
 
@@ -12,7 +12,6 @@ $(document).ready(function(){
      */
     //
     // console.log($.ajax("https://hookbin.com/ggeJQzxw7XFlL30dV6a2?username=Bob"));
-
 
 
     /*
@@ -35,16 +34,16 @@ $(document).ready(function(){
      * TO DO: Refactor the first example using a GET request object instead of
      * appending a query to the url.
    //   */
-   //
-   //
-   //      var bob = {
-   //          type: "GET",
-   //          data: {
-   //              username: "Bob"
-   //          }
-   //
-   //  };
-   // console.log( $.ajax("https://hookbin.com/ggeJQzxw7XFlL30dV6a2"));
+    //
+    //
+    //      var bob = {
+    //          type: "GET",
+    //          data: {
+    //              username: "Bob"
+    //          }
+    //
+    //  };
+    // console.log( $.ajax("https://hookbin.com/ggeJQzxw7XFlL30dV6a2"));
     /*********************************************
      *              REQUESTS and RESPONSES
      ******************************************** */
@@ -73,14 +72,14 @@ $(document).ready(function(){
      * TO DO TOGETHER: Let's make a request to the books inventory we saved
       * previously.
      */
- var myBooks =$.ajax("data/books.json");
- myBooks.done(function(data){
-     console.log(data);
- });
+    var myBooks = $.ajax("data/books.json");
+    myBooks.done(function (data) {
+        console.log(data);
+    });
 
- // myBooks.always(function(){
- //     console.log("Book search complete!");
- // });
+    // myBooks.always(function(){
+    //     console.log("Book search complete!");
+    // });
     /*
      * TO DO TOGETHER: What if we want to display a message if this AJAX request
      * fails?
@@ -117,15 +116,15 @@ $(document).ready(function(){
      * Take a look at the object that is being returned. Write a console log
       * that displays the director of the film.
      */
-  var myMovie= $.ajax("https://swapi.co/api/films/", {
-      type: "GET",
-      data: {
-          "search": "A New Hope"
-      }
-  });
-      myMovie.done(function(data){
-          console.log("the Director of A New Hope is: " + data.results[0].director);
-      });
+    var myMovie = $.ajax("https://swapi.co/api/films/", {
+        type: "GET",
+        data: {
+            "search": "A New Hope"
+        }
+    });
+    myMovie.done(function (data) {
+        console.log("the Director of A New Hope is: " + data.results[0].director);
+    });
     /*
      * TO DO: Create a new variable that makes a similar request. Search for
      * "The Force Awakens" and console log its release date.
@@ -137,18 +136,18 @@ $(document).ready(function(){
             "search": "The Force Awakens"
         }
     });
-        forceAwakens.done(function (data) {
-            console.log("This film's release date is: " +  data.results[0].release_date);
+    forceAwakens.done(function (data) {
+        console.log("This film's release date is: " + data.results[0].release_date);
 
-        });
+    });
     /*
      * TO DO: Make a request to books.json. Return the author of "The
      * Canterbury Tales."
      */
 
-     myBooks.done(function(data){
-         console.log(data[17].author);
-     });
+    myBooks.done(function (data) {
+        console.log(data[17].author);
+    });
 
 
     /*********************************************
@@ -185,13 +184,16 @@ $(document).ready(function(){
 
     var requestBooks = $.ajax("data/books.json");
 
- $.each (data, function(index, book){
-     var content += "<h2>"
-     content += book.title;
-     content += "</h2>"
+    $.each(data, function (index, book) {
+        var content = "<h2>";
+        content += book.title;
+        content += "</h2>";
 
-     console.log(book.title);
- })
+        console.log(book.title);
+        $('main').append(content);
+    });
+
+
 
 
     requestBooks.fail(function(data){
