@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dad's Weather App</title>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+
+    <link rel="stylesheet" href="css/weather_map.css"/>
+
+
+</head>
+<body>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery-2.2.4.js"></script>
+
+<!-- mapbox JS -->
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/keys.js"></script>
+
+
+<script>
+
+   var darkSky = $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/" + darkSkyKey + "/29.4241,-98.4936");
+
+    darkSky.done(function(data){
+        var todayTempHi = data.daily.data[0].temperatureHigh;
+        var todayTempLow = data.daily.data[0].temperatureLow;
+        console.log(todayTempLow);
+        console.log(todayTempHi);
+    });
+
+
+
+
+
+</script>
+</body>
+</html>

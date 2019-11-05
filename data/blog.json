@@ -16,5 +16,13 @@
             "sugar"
         ],
         "date": "February 14, 2015"
+    },
+    {
+        "title": "Tres Blog",
+        "content": "I'm really trying to make this project look very nice!",
+        "categories": [
+            "new"
+        ],
+        "date": "November 5, 2019"
     }
 ]
