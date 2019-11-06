@@ -21,17 +21,33 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/satellite-streets-v10'
 });
 
+var layerList = document.getElementById('menu');
+var inputs = layerList.getElementsByTagName('input');
+
+//switch layer function allows you to choose different styles//
+function switchLayer(layer) {
+    var layerId = layer.target.id;
+    map.setStyle('mapbox://styles/mapbox/' + layerId);
+}
+
+for (var i = 0; i < inputs.length; i++) {
+    inputs[i].onclick = switchLayer;
+}
+
 var newMarker = new mapboxgl.Marker();
 newMarker.setLngLat([-98.4916, 29.4252]);
 newMarker.addTo(map);
 newMarker.setDraggable(true);
 
+
+
+// instead of making three different functions, iterate through the days with a for each loop and index of i //
 function getWeather() {
     $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/7432dcc353e65f1a1ddbe0448d1b5477/" + newMarker.getLngLat().lat + "," + newMarker.getLngLat().lng).done(function (data) {
         $('.day').each(function (i) {
             $(this).html("");
             $(this).append("<h2>" + Math.round(data.daily.data[i].temperatureHigh) + "&deg / " + Math.round(data.daily.data[i].temperatureLow) + "&deg</h2>");
-            $(this).append("<p>Summary: " + data.daily.data[i].summary + "</p>");
+            $(this).append("<p>Summary: " + data.daily.data[i].summary +"</p>");
             $(this).append("<p>Precipitation: " + data.daily.data[i].precipType + "</p>");
             $(this).append("<p>Wind: " + data.daily.data[i].windSpeed + "</p>");
         });
@@ -51,3 +67,4 @@ function getWeather() {
 newMarker.on('dragend', getWeather);
 
 getWeather();
+
