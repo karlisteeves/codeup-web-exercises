@@ -49,7 +49,7 @@ function getWeather() {
     $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/7432dcc353e65f1a1ddbe0448d1b5477/" + newMarker.getLngLat().lat + "," + newMarker.getLngLat().lng).done(function (data) {
         $('.day').each(function (i) {
             $(this).html("");
-            // $(this).append("<img style='height: 50px; width: 50px' alt='' src='" + conditions[data.daily.data[i].icon] + "'>");
+            $(this).append("<img style='height: 150px; width: 150px' alt='' src='" + conditions[data.daily.data[i].icon] + "'>");
             $(this).append("<h2>" + Math.round(data.daily.data[i].temperatureHigh) + "&deg / " + Math.round(data.daily.data[i].temperatureLow) + "&deg</h2>");
             $(this).append("<p>Summary: " + data.daily.data[i].summary +"</p>");
             $(this).append("<p>Precipitation: " + data.daily.data[i].precipType + "</p>");
