@@ -2,61 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dad's Weather App</title>
-
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
-
-    <link rel="stylesheet" href="css/weather_map.css"/>
-
-
+    <title>Title</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.css' rel='stylesheet'/>
+    <link href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.css' rel='stylesheet' type='text/css'/>
+    <link href="css/weather_map.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="container">
 
-<!-- SCRIPTS -->
+    <h1>Weather Project</h1>
+
+    <div class="days">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+    </div>
+
+    <div id='map' style='width: 100%; height: 400px; margin-top: 10px;'></div>
+    <label for="searchInput">Search: </label>
+    <input id="searchInput" type="text">
+    <button id="search">Go</button>
+</div>
 
 <script src="js/jquery-2.2.4.js"></script>
-
-<!-- mapbox JS -->
-
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-<script src="js/mapbox-geocoder-utils.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.js'></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.min.js'></script>
 <script src="js/keys.js"></script>
-
-
-<script>
-
-   var darkSky = $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/" + darkSkyKey + "/29.4241,-98.4936");
-
-    darkSky.done(function(data){
-        var todayTempHi = data.daily.data[0].temperatureHigh;
-        var todayTempLow = data.daily.data[0].temperatureLow;
-        console.log(todayTempLow);
-        console.log(todayTempHi);
-    });
-//Tomorrow's weather forecast//
-
-   // darkSky.done(function(data){
-   //     var tomorrowTempHi = data.daily.data[1].temperatureHigh;
-   //     var tomorrowTempLow = data.daily.data[1].temperatureLow;
-   //     console.log(tomorrowTempLow);
-   //     console.log(tomorrowTempHi);
-   // });
-
-//Next day weather forecast//
-//
-//    darkSky.done(function(data){
-//        var nextTempHi = data.daily.data[2].temperatureHigh;
-//        var nextTempLow = data.daily.data[2].temperatureLow;
-//        console.log(nextTempLow);
-//        console.log(nextTempHi);
-//    });
-
-    
-   //today's date//
-
-   var dateObject = new Date(1551736889 * 1000);
-   console.log(dateObject.toString());
-
-</script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/weather_map.js"></script>
 </body>
 </html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Dad's Weather App</title>-->
+
+    <!--<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>-->
+
+    <!--<link rel="stylesheet" href="css/weather_map.css"/>-->
+
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<div class="container">-->
+
+<!--</div>-->
+<!--&lt;!&ndash; SCRIPTS &ndash;&gt;-->
+
+<!--<script src="js/jquery-2.2.4.js"></script>-->
+
+<!--&lt;!&ndash; mapbox JS &ndash;&gt;-->
+
+<!--<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>-->
+<!--<script src="js/mapbox-geocoder-utils.js"></script>-->
+<!--<script src="js/keys.js"></script>-->
+
+<!--&lt;!&ndash; bootstrap scipt &ndash;&gt;-->
+
+<!--<script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+
+
+<!--<script>-->
+
+   <!--var darkSky = $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/" + darkSkyKey + "/29.4241,-98.4936");-->
+
+   <!--darkSky.done(function(data) {-->
+       <!--var todaySummary = data.daily.data[0].summary;-->
+       <!--var todayTempHi = data.daily.data[0].temperatureHigh;-->
+       <!--var todayTempLo = data.daily.data[0].temperatureLow;-->
+       <!--var todayhumidity = data.daily.data[0].humidity;-->
+       <!--var todayWind = data.daily.data[0].windSpeed;-->
+       <!--var todayPressure = data.daily.data[0].pressure;-->
+       <!--var weatherCard = "";-->
+       <!--weatherCard += ("<h5>" + todaySummary + "</h5>");-->
+       <!--weatherCard += ("<h5> Temp: Lo: " + todayTempLo + "/ Hi: " + todayTempHi + "</h5>");-->
+       <!--weatherCard += ("<h5> Humidity: " + todayhumidity + "</h5>");-->
+       <!--weatherCard += ("<h5>Wind Speed: " + todayWind + "</h5>");-->
+       <!--weatherCard += ("<h5> Pressure: " + todayPressure + "</h5>");-->
+       <!--// language=JQuery-CSS-->
+       <!--$("#todayWeather").append(weatherCard);-->
+   <!--});-->
+
+
+
+    <!--// darkSky.done(function(data){-->
+    <!--//-->
+    <!--//     var todayTempHi = data.daily.data[0].temperatureHigh;-->
+    <!--//     var todayTempLow = data.daily.data[0].temperatureLow;-->
+    <!--//     var todaySummary = data.daily.data[0].summary;-->
+    <!--//-->
+    <!--//     var weatherCard = "";-->
+    <!--//     weatherCard += ("<h5>" + todaySummary + "</h5>");-->
+    <!--//     weatherCard += ("<h5>" + todayTempLow + "/ Hi: " + todayTempHi + "</h5>");-->
+    <!--//-->
+    <!--//     $("#todayWeather").append(weatherCard);-->
+    <!--// });-->
+    <!--//-->
+    <!--//     console.log(todayTempLow);-->
+    <!--//     console.log(todayTempHi);-->
+    <!--//     console.log(todaySummary);-->
+
+
+<!--// Tomorrow's weather forecast//-->
+
+   <!--darkSky.done(function(data){-->
+       <!--var tomorrowTempHi = data.daily.data[1].temperatureHigh;-->
+       <!--var tomorrowTempLow = data.daily.data[1].temperatureLow;-->
+       <!--var tomorrowSummary = data.daily.data[1].summary;-->
+       <!--console.log(tomorrowTempLow);-->
+       <!--console.log(tomorrowTempHi);-->
+       <!--console.log(tomorrowSummary);-->
+   <!--});-->
+
+<!--// Next day weather forecast//-->
+
+   <!--darkSky.done(function(data){-->
+       <!--var nextTempHi = data.daily.data[2].temperatureHigh;-->
+       <!--var nextTempLow = data.daily.data[2].temperatureLow;-->
+       <!--var nextSummary = data.daily.data[2].summary;-->
+       <!--console.log(nextTempLow);-->
+       <!--console.log(nextTempHi);-->
+       <!--console.log(nextSummary);-->
+
+   <!--});-->
+
+
+
+   <!--//today's date//-->
+   <!--// var currentDate = new Date();-->
+   <!--//-->
+   <!--// var date = currentDate.getDate();-->
+   <!--// var month = currentDate.getMonth(); //Be careful! January is 0 not 1-->
+   <!--// var year = currentDate.getFullYear();-->
+   <!--//-->
+   <!--// var dateString = date  + "-" +(month + 1) + "-" + year;-->
+   <!--//-->
+   <!--//  console.log(dateString);-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
