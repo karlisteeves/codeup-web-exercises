@@ -18,7 +18,7 @@
 // Use a CDN
 //<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-// TODO: Add jQuery to the html file by downloading and saving a local copy
+// TODO: Add jQuery to the html file by downloading and saving a local copy3
 
 // TODO: Add jQuery to the html file using the CDN
 

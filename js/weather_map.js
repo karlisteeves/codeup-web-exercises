@@ -1,4 +1,5 @@
 "use strict";
+//try to change the backgrounds by setting different weather pics to variables and appending them!
 
 var conditions = {
     'clear-day': "icon/Sun.svg",
@@ -49,6 +50,7 @@ function getWeather() {
     $.get("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/7432dcc353e65f1a1ddbe0448d1b5477/" + newMarker.getLngLat().lat + "," + newMarker.getLngLat().lng).done(function (data) {
         $('.day').each(function (i) {
             $(this).html("");
+            $(this).append("<img style='height: 100%; width: 100%' alt='' src='" + weatherbackground[data.daily.data[i].img] + "'>");
             $(this).append("<img style='height: 150px; width: 150px' alt='' src='" + conditions[data.daily.data[i].icon] + "'>");
             $(this).append("<h2>" + Math.round(data.daily.data[i].temperatureHigh) + "&deg / " + Math.round(data.daily.data[i].temperatureLow) + "&deg</h2>");
             $(this).append("<p>Summary: " + data.daily.data[i].summary +"</p>");
@@ -59,6 +61,7 @@ function getWeather() {
         });
     });
 }
+
 
 $('#search').click(function () {
     geocode($('#searchInput').val(), mapboxToken).then(function (result) {

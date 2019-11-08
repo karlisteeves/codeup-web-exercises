@@ -39,7 +39,11 @@
         $("#cohorthighlight").css("background-color", "yellow");
     });
 
-
+  $("#change-cohort").click(function(){
+      $("#my-cohort").append($('<span>',{
+          text: $("#cohort-name").val()
+      }))
+  })
 </script>
 </body>
 </html>

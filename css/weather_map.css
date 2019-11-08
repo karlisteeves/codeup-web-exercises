@@ -37,10 +37,14 @@ h1{
 
 
 #menu {
-    position: absolute;
+
+    /*position: absolute;*/
     background: #fff;
     padding: 10px;
+
     font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+
 }
 
 #searchbar {

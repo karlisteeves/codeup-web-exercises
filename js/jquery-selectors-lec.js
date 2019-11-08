@@ -132,7 +132,7 @@ $("h1").click(function(){
 	});
 
 
-	$('li').hover(
+	$('li').toggleClass(
 		function() {
 			$(this).css('background-color', 'red');
 		},
