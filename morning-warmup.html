@@ -498,6 +498,45 @@ function evenNum(arr){
 
 }
 
+
+function even(num){
+    return num % 2 === 0;
+}
+
+
+
+let p = new Promise((resolve, reject) => {
+    let num = 2;
+    if ( num % 2 === 0){
+        resolve('Success')
+    }else{
+        reject ('Failed')
+    }
+});
+
+p.then((message) =>{
+    console.log('This is an even number ' + message)
+}).catch((message)=>{
+    console.log('This is not an even number ' + message)
+});
+
+//
+// let p = new Promise((resolve, reject) => {
+//     let a = 1 + 4;
+//     if (a == 2){
+//         resolve('Success')
+//     }else{
+//         reject('Failed')
+//     }
+// });
+//
+// p.then((message) =>
+// {
+//     console.log('This is in the THEN ' + message)
+// }).catch((message) => {
+//     console.log('This is in the CATCH ' + message)
+// });
+
 </script>
 
 
